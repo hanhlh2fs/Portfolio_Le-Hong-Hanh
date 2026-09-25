@@ -1,1 +1,1310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Hồ sơ năng lực Lê Hồng Hạnh — Digital Marketing &amp; Marketing Operations">
+<title>Le Hong Hanh Portfolio</title>
+<link data-own="" rel="preconnect" href="https://fonts.googleapis.com">
+<link data-own="" rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link data-own="" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Playfair+Display:wght@500;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;family=Lora:wght@500;600;700&amp;family=Source+Sans+3:wght@300;400;500;600&amp;display=swap">
+<style data-own="">
+:root{
+  --red:#D91F27;
+  --red-deep:#A2151B;
+  --red-soft:#F5626A;
+  --wash:#FFF1F1;
+  --ink:#17191F;
+  --ink-2:#3E3A3C;
+  --muted:#7A6E70;
+  --surface:#FFFFFF;
+  --ground:#FAF8F8;
+  --line:#EBE0E0;
+  --line-strong:#D9C9C9;
+  --shadow:0 1px 2px rgba(23,25,31,.05), 0 8px 24px -14px rgba(162,21,27,.22);
+  --sans:"Be Vietnam Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --disp:"Bricolage Grotesque","Be Vietnam Pro",-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --rail:288px;
+  --fs:1;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --red:#FF5C63;
+    --red-deep:#FF8A8F;
+    --red-soft:#FF8A8F;
+    --wash:#2A1D1F;
+    --ink:#F6F1F1;
+    --ink-2:#DCD3D4;
+    --muted:#A79A9C;
+    --surface:#1E1A1B;
+    --ground:#141112;
+    --line:#332B2D;
+    --line-strong:#4A3E40;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -14px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --red:#FF5C63;
+  --red-deep:#FF8A8F;
+  --red-soft:#FF8A8F;
+  --wash:#2A1D1F;
+  --ink:#F6F1F1;
+  --ink-2:#DCD3D4;
+  --muted:#A79A9C;
+  --surface:#1E1A1B;
+  --ground:#141112;
+  --line:#332B2D;
+  --line-strong:#4A3E40;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -14px rgba(0,0,0,.6);
+}
 
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:var(--sans);font-size:calc((15px) * var(--fs,1));line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--red-deep);text-decoration:none;border-bottom:1px solid var(--line-strong);border-bottom-color:color-mix(in srgb,var(--red) 35%,transparent)}
+a:hover{border-bottom-color:var(--red)}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:3px}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:var(--disp);text-wrap:balance;margin:0;letter-spacing:-.015em}
+p{margin:0}
+
+/* ---------- shell ---------- */
+.shell{display:flex;align-items:flex-start;min-height:100%}
+
+/* ---------- sidebar ---------- */
+.rail{
+  width:var(--rail);flex:0 0 var(--rail);
+  position:sticky;top:env(safe-area-inset-top,0px);
+  align-self:flex-start;max-height:100vh;overflow-y:auto;
+  background:var(--surface);border-right:1px solid var(--line);
+  padding:32px 24px 28px;
+}
+.langsw{display:flex;gap:4px;margin-bottom:16px}
+.langsw button{
+  font-family:var(--mono);font-size:calc((10.5px) * var(--fs,1));letter-spacing:.08em;
+  padding:4px 11px;border-radius:6px;cursor:pointer;
+  border:1px solid var(--line-strong);background:var(--surface);color:var(--muted);
+}
+.langsw button:hover{border-color:var(--red);color:var(--red)}
+.langsw button.on{background:var(--red);border-color:var(--red);color:#fff}
+.ident{display:flex;flex-direction:column;gap:14px}
+.ident img{
+  width:84px;height:84px;border-radius:50%;object-fit:cover;
+  border:3px solid var(--surface);box-shadow:0 0 0 2px var(--red);
+}
+.ident h1{font-size:calc((23px) * var(--fs,1));font-weight:700;line-height:1.18}
+.ident .role{font-size:calc((13px) * var(--fs,1));color:var(--muted);line-height:1.45;margin-top:4px}
+.eyebrow{
+  font-family:var(--mono);font-size:calc((10.5px) * var(--fs,1));font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--red);
+}
+.contacts{display:flex;flex-direction:column;gap:7px;margin-top:20px;font-size:calc((13px) * var(--fs,1))}
+.contacts a,.contacts span{
+  color:var(--ink-2);border:0;display:flex;gap:9px;align-items:baseline;word-break:break-word;
+}
+.contacts a:hover{color:var(--red)}
+.contacts .k{font-family:var(--mono);font-size:calc((9.5px) * var(--fs,1));letter-spacing:.1em;text-transform:uppercase;color:var(--muted);flex:0 0 68px;white-space:nowrap}
+
+nav{margin-top:26px;border-top:1px solid var(--line);padding-top:18px}
+nav ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+nav a{
+  display:flex;align-items:center;gap:10px;
+  padding:7px 0 7px 12px;border:0;border-left:2px solid var(--line);
+  font-size:calc((13.5px) * var(--fs,1));color:var(--ink-2);transition:color .15s,border-color .15s;
+}
+nav a:hover{color:var(--red);border-left-color:var(--line-strong)}
+nav a.on{color:var(--red);font-weight:600;border-left-color:var(--red)}
+nav .yr{font-family:var(--mono);font-size:calc((9.5px) * var(--fs,1));color:var(--muted);margin-left:auto}
+nav a.on .yr{color:var(--red-soft)}
+
+/* danh mục con */
+nav > ol > li{position:relative}
+nav .sub{
+  list-style:none;margin:0;padding:0;
+  max-height:0;overflow:hidden;opacity:0;
+  transition:max-height .28s ease,opacity .2s ease;
+}
+nav > ol > li:hover > .sub,
+nav > ol > li.open > .sub{max-height:420px;opacity:1;padding-bottom:6px}
+nav .sub a{
+  display:block;padding:5px 4px 5px 26px;
+  border-left:2px solid var(--line);
+  font-size:calc((12.5px) * var(--fs,1));line-height:1.4;color:var(--muted);font-weight:400;
+}
+nav .sub a:hover{color:var(--red);border-left-color:var(--line-strong);font-weight:400}
+nav .sub a.on{color:var(--red);font-weight:600;border-left-color:var(--red)}
+nav > ol > li:has(> a.on) > .sub a{border-left-color:var(--line-strong)}
+.proj{scroll-margin-top:26px}
+@media (max-width:860px){ nav .sub{display:none} }
+@media (prefers-reduced-motion:reduce){ nav .sub{transition:none} }
+
+.tools{margin-top:24px;border-top:1px solid var(--line);padding-top:18px;display:flex;flex-direction:column;gap:8px}
+.btn{
+  font-family:var(--sans);font-size:calc((12.5px) * var(--fs,1));font-weight:500;
+  padding:8px 12px;border-radius:7px;cursor:pointer;
+  background:var(--surface);color:var(--ink-2);border:1px solid var(--line-strong);
+  text-align:left;transition:background .15s,color .15s,border-color .15s;
+}
+.btn:hover{border-color:var(--red);color:var(--red)}
+.btn[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+.tools .hint{font-size:calc((11.5px) * var(--fs,1));color:var(--muted);line-height:1.45}
+
+/* ---------- main ---------- */
+main{flex:1 1 auto;min-width:0;padding:0 clamp(16px,4vw,56px)}
+.wrap{position:relative;max-width:900px;margin:0 auto;padding-block:clamp(32px,5vw,64px) 88px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 210px;gap:clamp(20px,4vw,44px);align-items:start}
+.hero h2{font-size:calc((clamp(30px,4.6vw,46px)) * var(--fs,1));font-weight:700;line-height:1.06;margin:10px 0 0}
+.hero h2 em{font-style:normal;color:var(--red)}
+.lede{font-size:calc((16.5px) * var(--fs,1));color:var(--ink-2);margin-top:18px;max-width:58ch}
+.lede + .lede{margin-top:12px;font-size:calc((15px) * var(--fs,1));color:var(--muted)}
+.portrait{border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:var(--wash)}
+.portrait img{aspect-ratio:2/3;object-fit:cover;width:100%}
+
+/* stat strip */
+.stats{
+  margin-top:clamp(28px,4vw,40px);
+  border-top:3px solid var(--red);background:var(--surface);
+  border-right:1px solid var(--line);border-bottom:1px solid var(--line);border-left:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.stat{padding:18px 18px 16px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat .n{
+  font-family:var(--disp);font-size:calc((clamp(22px,2.6vw,29px)) * var(--fs,1));font-weight:700;
+  line-height:1.08;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.02em;
+}
+.stat .n small{font-size:.58em;font-weight:600;color:var(--muted);letter-spacing:0}
+.stat .l{font-size:calc((12.5px) * var(--fs,1));color:var(--muted);margin-top:7px;line-height:1.4}
+
+/* sections */
+section{scroll-margin-top:24px;padding-top:clamp(44px,6vw,72px)}
+.shead{border-bottom:1px solid var(--line);padding-bottom:14px}
+.shead h3{font-size:calc((clamp(21px,2.6vw,27px)) * var(--fs,1));font-weight:700;margin-top:8px}
+.shead .meta{
+  display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:9px;
+  font-size:calc((13px) * var(--fs,1));color:var(--muted);
+}
+.shead .meta .rolename{color:var(--ink-2);font-weight:500}
+.shead .meta .when{font-family:var(--mono);font-size:calc((11.5px) * var(--fs,1));letter-spacing:.04em}
+
+/* prose */
+.body-copy{margin-top:20px;max-width:66ch;color:var(--ink-2)}
+ul.pts{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:9px;max-width:68ch}
+ul.pts li{position:relative;padding-left:20px;color:var(--ink-2);font-size:calc((14.5px) * var(--fs,1))}
+ul.pts li::before{
+  content:"";position:absolute;left:2px;top:.62em;
+  width:7px;height:2px;background:var(--red);
+}
+ul.pts li strong{color:var(--ink);font-weight:600}
+
+/* project block */
+.proj{margin-top:clamp(30px,4vw,44px)}
+.proj > h4{
+  font-size:calc((17.5px) * var(--fs,1));font-weight:700;display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;
+}
+.tag{
+  font-family:var(--mono);font-size:calc((9.5px) * var(--fs,1));letter-spacing:.11em;text-transform:uppercase;
+  color:var(--red);background:var(--wash);padding:3px 7px;border-radius:4px;font-weight:500;
+  white-space:nowrap;
+}
+.proj .intro{margin-top:9px;color:var(--muted);font-size:calc((14.5px) * var(--fs,1));max-width:66ch}
+
+/* inline metrics */
+.mrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.mcell{
+  border:1px solid var(--line);border-left:3px solid var(--red);
+  background:var(--surface);padding:11px 15px;min-width:150px;flex:1 1 150px;
+}
+.mcell .n{font-family:var(--disp);font-size:calc((19px) * var(--fs,1));font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.mcell .l{font-size:calc((11.5px) * var(--fs,1));color:var(--muted);margin-top:3px;line-height:1.35}
+
+/* evidence */
+.ev{margin-top:20px;display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start}
+.ev > figure{flex:0 1 100%;min-width:0}
+.ev.two > figure{flex:0 1 calc(50% - 8px)}
+.ev > figure[data-w]{flex:0 0 auto}
+figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:9px;overflow:hidden;box-shadow:var(--shadow)}
+figure button{
+  display:block;width:100%;padding:0;border:0;background:var(--wash);cursor:zoom-in;
+  border-bottom:1px solid var(--line);
+}
+figure img{width:100%;height:auto}
+figcaption{
+  padding:10px 14px;font-size:calc((12px) * var(--fs,1));color:var(--muted);line-height:1.45;
+  display:flex;gap:9px;align-items:baseline;
+}
+figcaption .no{font-family:var(--mono);font-size:calc((9.5px) * var(--fs,1));letter-spacing:.09em;color:var(--red);flex:none;padding-top:2px}
+.note{
+  margin-top:16px;font-size:calc((12.5px) * var(--fs,1));color:var(--muted);
+  border-left:2px solid var(--line-strong);padding:2px 0 2px 13px;max-width:62ch;
+}
+
+/* thẻ video + kịch bản */
+.videocard{
+  margin-top:18px;display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start;
+  background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;box-shadow:var(--shadow);
+}
+.vthumb{
+  position:relative;flex:0 0 auto;width:clamp(150px,32%,240px);border:0;border-radius:8px;overflow:hidden;
+  background:var(--wash);line-height:0;
+}
+.vthumb img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 24%}
+.vthumb .playbtn{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:calc((26px) * var(--fs,1));
+  background:rgba(14,10,11,.28);transition:background .18s;
+}
+.vthumb:hover .playbtn{background:rgba(14,10,11,.12)}
+.vmeta{flex:1 1 220px;min-width:0;display:flex;flex-direction:column;gap:7px}
+.vmeta .vtitle{font-family:var(--disp);font-size:calc((16px) * var(--fs,1));font-weight:700;color:var(--ink)}
+.vmeta .vdesc{font-size:calc((13.5px) * var(--fs,1));color:var(--muted)}
+.vbtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.vmeta .vbtn{
+  align-self:flex-start;border:1px solid var(--red);border-radius:7px;
+  padding:7px 14px;font-size:calc((13px) * var(--fs,1));font-weight:500;color:#fff;background:var(--red);
+}
+.vmeta .vbtn:hover{background:var(--red-deep);border-color:var(--red-deep);color:#fff}
+.vmeta .vbtn.ghost{background:var(--surface);color:var(--red);cursor:pointer;font-family:var(--sans)}
+.vmeta .vbtn.ghost:hover{background:var(--wash);color:var(--red);border-color:var(--red)}
+.scriptbody h5{
+  font-family:var(--disp);font-size:calc((14px) * var(--fs,1));font-weight:700;color:var(--ink);
+  margin:18px 0 6px;padding-bottom:5px;border-bottom:1px solid var(--line);
+}
+.scriptbody h5:first-child{margin-top:0}
+.scriptbody .beat{margin-top:7px}
+.scriptbody .beat b{color:var(--red);font-weight:600}
+.scriptbody .line{
+  margin-top:6px;padding:8px 11px;background:var(--wash);border-radius:6px;
+  border-left:2px solid var(--red);font-style:italic;
+}
+
+details.script{margin-top:12px;border:1px solid var(--line);border-radius:9px;background:var(--surface);overflow:hidden}
+details.script > summary{
+  cursor:pointer;list-style:none;padding:11px 16px;font-size:calc((13.5px) * var(--fs,1));font-weight:500;
+  color:var(--red);background:var(--wash);
+}
+details.script > summary::-webkit-details-marker{display:none}
+details.script > summary::before{content:"▸ ";display:inline-block;transition:transform .2s}
+details.script[open] > summary::before{content:"▾ "}
+.scriptbody{padding:14px 16px;font-size:calc((13.5px) * var(--fs,1));color:var(--ink-2);line-height:1.7}
+.scriptbody p + p{margin-top:9px}
+.scriptbody strong{color:var(--ink)}
+
+/* lưới ảnh đều khung */
+.ev.grid3{gap:14px;align-items:stretch}
+.ev.grid3 > figure{display:flex;flex-direction:column}
+.ev.grid3 figcaption{flex:1 1 auto}
+.ev.grid3 > figure{flex:0 1 calc(33.333% - 9.34px)}
+.ev.grid3 figure img,.ev.square figure img{aspect-ratio:1/1;object-fit:cover;object-position:center 28%}
+.ev.wide figure img{aspect-ratio:4/3;object-fit:cover;object-position:center top}
+@media (max-width:720px){ .ev.grid3 > figure{flex-basis:calc(50% - 7px)} }
+@media (max-width:470px){ .ev.grid3 > figure{flex-basis:100%} }
+
+/* lưới công cụ */
+.toolgrid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));
+  gap:10px;margin-top:20px;
+}
+.tool{
+  display:flex;align-items:center;gap:11px;padding:11px 13px;
+  background:var(--surface);border:1px solid var(--line);border-radius:9px;
+}
+.tool .ico{
+  flex:0 0 auto;width:34px;height:34px;border-radius:8px;background:var(--wash);
+  display:flex;align-items:center;justify-content:center;overflow:hidden;
+}
+.tool .ico svg{width:19px;height:19px;stroke:var(--red);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.tool .ico img{width:100%;height:100%;object-fit:contain}
+.tool span.nm{font-size:calc((13px) * var(--fs,1));color:var(--ink-2);line-height:1.3;min-width:0}
+body.editing .tool .ico{cursor:cell}
+
+/* skills grid */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:22px;background:var(--line)}
+.skill{background:var(--surface);padding:18px 20px}
+.skill h4{font-size:calc((14.5px) * var(--fs,1));font-weight:700;color:var(--ink)}
+.skill p{font-size:calc((13.5px) * var(--fs,1));color:var(--muted);margin-top:6px}
+
+/* award list */
+.awards{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.awards li{
+  background:var(--wash);border:1px solid var(--line-strong);border-color:color-mix(in srgb,var(--red) 18%,transparent);
+  padding:13px 16px;font-size:calc((14px) * var(--fs,1));color:var(--ink);border-radius:7px;
+}
+.awards li .n{font-family:var(--disp);font-weight:700;color:var(--red);font-size:calc((17px) * var(--fs,1));display:block;font-variant-numeric:tabular-nums}
+
+/* tools cloud */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chips span{
+  font-size:calc((13px) * var(--fs,1));padding:6px 12px;border-radius:20px;
+  background:var(--surface);border:1px solid var(--line-strong);color:var(--ink-2);
+}
+
+/* contact card */
+.cta{
+  margin-top:clamp(40px,6vw,72px);background:var(--surface);
+  border:1px solid var(--line);border-top:3px solid var(--red);
+  padding:clamp(22px,3vw,32px);
+}
+.cta h3{font-size:calc((22px) * var(--fs,1));font-weight:700}
+.cta p{color:var(--muted);margin-top:8px;max-width:56ch;font-size:calc((14.5px) * var(--fs,1))}
+.cta .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.cta .links a{
+  border:1px solid var(--line-strong);border-radius:7px;padding:9px 16px;
+  font-size:calc((13.5px) * var(--fs,1));font-weight:500;color:var(--ink-2);
+}
+.cta .links a:first-child{background:var(--red);border-color:var(--red);color:#fff}
+.cta .links a:hover{border-color:var(--red);color:var(--red)}
+.cta .links a:first-child:hover{color:#fff;background:var(--red-deep);border-color:var(--red-deep)}
+
+/* ---------- edit mode ---------- */
+[hidden]{display:none!important}
+
+/* theme panel */
+.theme{display:flex;flex-direction:column;gap:9px;padding-top:4px}
+.theme .row{display:flex;flex-direction:column;gap:6px}
+.swatches{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.swatches button{
+  width:22px;height:22px;border-radius:50%;border:2px solid var(--surface);
+  box-shadow:0 0 0 1px var(--line-strong);cursor:pointer;padding:0;
+}
+.swatches button[aria-pressed="true"]{box-shadow:0 0 0 2px var(--ink)}
+.swatches input[type="color"]{
+  width:26px;height:26px;padding:0;border:1px solid var(--line-strong);
+  border-radius:6px;background:var(--surface);cursor:pointer;
+}
+.theme select,.theme input[type="range"]{width:100%}
+.theme select{
+  font-family:var(--sans);font-size:12.5px;padding:6px 8px;border-radius:6px;
+  border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);
+}
+.theme input[type="range"]{accent-color:var(--red)}
+
+/* floating format bar */
+.fmtbar{
+  position:fixed;z-index:70;display:flex;flex-wrap:wrap;gap:4px;align-items:center;
+  background:var(--surface);border:1px solid var(--line-strong);border-radius:9px;
+  padding:5px 6px;box-shadow:0 10px 30px -10px rgba(23,25,31,.35),0 2px 6px rgba(23,25,31,.12);
+  max-width:min(94vw,470px);
+}
+.fmtbar button,.fmtbar select{
+  font-family:var(--sans);font-size:12px;line-height:1.5;color:var(--ink-2);
+  background:transparent;border:1px solid transparent;border-radius:6px;
+  padding:4px 7px;cursor:pointer;min-width:26px;
+}
+.fmtbar select{border-color:var(--line-strong);max-width:120px}
+.fmtbar button:hover{background:var(--wash);color:var(--red)}
+.fmtbar button[aria-pressed="true"]{background:var(--red);color:#fff}
+.fmtbar .sz{font-family:var(--mono);font-size:11.5px;min-width:26px;text-align:center;color:var(--ink-2)}
+.fmtbar .sep{width:1px;height:18px;background:var(--line);margin:0 2px}
+.fmtbar .dot{width:18px;height:18px;border-radius:50%;border:1px solid var(--line-strong);padding:0}
+.fmtpop{
+  position:fixed;z-index:71;display:flex;flex-wrap:wrap;gap:6px;width:186px;
+  background:var(--surface);border:1px solid var(--line-strong);border-radius:9px;padding:9px;
+  box-shadow:0 10px 30px -10px rgba(23,25,31,.35);
+}
+.fmtpop button{width:24px;height:24px;border-radius:50%;border:1px solid var(--line-strong);cursor:pointer;padding:0}
+.fmtpop input[type="color"]{width:100%;height:28px;border:1px solid var(--line-strong);border-radius:6px;background:var(--surface);cursor:pointer;padding:0}
+.draghandle{cursor:grab}
+body.dragging,body.dragging *{cursor:grabbing!important;user-select:none}
+.dropline{height:3px;background:var(--red);border-radius:2px;flex:0 0 100%;margin:-8px 0}
+.ed{font-variant-numeric:tabular-nums}
+body.editing .ed{background:var(--wash);border-radius:3px;padding:0 2px;margin:0 -2px}
+
+.toolhead{font-family:var(--mono);font-size:calc((9.5px) * var(--fs,1));letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:-2px}
+.btn-main{background:var(--red);border-color:var(--red);color:#fff}
+.btn-main:hover{background:var(--red-deep);border-color:var(--red-deep);color:#fff}
+
+body.editing [contenteditable]{outline:1px dashed var(--line-strong);outline-offset:5px;border-radius:3px}
+body.editing [contenteditable]:hover{outline-color:var(--red-soft)}
+body.editing [contenteditable]:focus{outline:2px solid var(--red)}
+body.editing figure{position:relative}
+body.editing figure > button{cursor:cell}
+body.editing .ident img,body.editing .portrait img{cursor:cell}
+.projbar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:12px}
+.projbar button{
+  flex:0 0 auto;width:auto;
+  font-family:var(--sans);font-size:11.5px;line-height:1.5;
+  border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);
+  border-radius:5px;padding:3px 9px;cursor:pointer;
+}
+.projbar button:hover{border-color:var(--red);color:var(--red)}
+.projbar .danger{color:var(--red);border-color:var(--red)}
+.projbar .danger:hover{background:var(--red);color:#fff}
+
+/* tay cầm kéo ở 4 góc ảnh */
+body.editing figure{overflow:visible}
+.reshandle{
+  position:absolute;width:22px;height:22px;border-radius:6px;
+  background:var(--red);border:3px solid #fff;z-index:9;touch-action:none;
+  box-shadow:0 2px 8px rgba(23,25,31,.35);
+}
+.reshandle[data-corner="nw"]{left:-11px;top:-11px;cursor:nwse-resize}
+.reshandle[data-corner="ne"]{right:-11px;top:-11px;cursor:nesw-resize}
+.reshandle[data-corner="sw"]{left:-11px;bottom:-11px;cursor:nesw-resize}
+.reshandle[data-corner="se"]{right:-11px;bottom:-11px;cursor:nwse-resize}
+
+/* ảnh đặt tự do */
+.ev > figure[data-free]{position:absolute;z-index:3}
+body.editing figure[data-free]{outline:2px dashed var(--red);outline-offset:5px}
+@media (max-width:860px){
+  .ev > figure[data-free]{position:static!important;left:auto!important;top:auto!important;width:auto!important}
+}
+
+/* nút trên ảnh */
+.figx,.figreset{
+  position:absolute;top:9px;width:27px;height:27px;border-radius:50%;padding:0;
+  display:flex;align-items:center;justify-content:center;z-index:7;cursor:pointer;
+  font-family:var(--sans);font-size:15px;line-height:1;
+  border:2px solid rgba(255,255,255,.9);box-shadow:0 2px 8px rgba(23,25,31,.3);
+}
+.figx{right:9px;background:var(--red);color:#fff}
+.figreset{left:9px;background:rgba(255,255,255,.95);color:#17191F}
+.figx:hover,.figreset:hover{filter:brightness(1.08)}
+body.editing figure img{cursor:move}
+.addchip,.figadd,.addproj{
+  margin-top:10px;width:100%;font-family:var(--sans);font-size:calc((12.5px) * var(--fs,1));color:var(--muted);
+  background:transparent;border:1px dashed var(--line-strong);border-radius:8px;padding:10px 14px;cursor:pointer;
+}
+.addchip:hover,.figadd:hover,.addproj:hover{border-color:var(--red);color:var(--red)}
+.addproj{margin-top:26px}
+.addchip{margin-top:12px;font-size:calc((12px) * var(--fs,1))}
+
+/* trình xem PDF */
+#pdfview{
+  position:fixed;inset:0;z-index:80;background:rgba(14,10,11,.94);
+  display:none;padding:0;border:0;width:100%;height:100%;max-width:100%;max-height:100%;
+}
+#pdfview[open]{display:flex;flex-direction:column}
+#pdfview .pdfbar{
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;
+  padding:12px 16px;padding-top:calc(12px + env(safe-area-inset-top,0px));
+  background:var(--surface);border-bottom:1px solid var(--line);
+}
+#pdfview .pdfttl{font-family:var(--disp);font-size:calc((14.5px) * var(--fs,1));font-weight:700;color:var(--ink)}
+#pdfview .pdfacts{display:flex;gap:8px}
+#pdfview .pdfacts a,#pdfview .pdfacts button{
+  font-family:var(--sans);font-size:calc((12.5px) * var(--fs,1));font-weight:500;cursor:pointer;
+  border:1px solid var(--line-strong);border-radius:7px;padding:6px 13px;background:var(--surface);color:var(--ink-2);
+}
+#pdfview .pdfacts a{border-color:var(--red);background:var(--red);color:#fff}
+#pdfview .pdfacts button:hover{border-color:var(--red);color:var(--red)}
+#pdfview .pdftext{
+  flex:1 1 auto;overflow-y:auto;background:var(--ground);color:var(--ink-2);
+  padding:clamp(18px,4vw,34px);font-size:calc((14px) * var(--fs,1));line-height:1.75;
+}
+#pdfview .pdftext > div{max-width:760px;margin:0 auto}
+#pdfview .pdftext h5{
+  font-family:var(--disp);font-size:calc((15px) * var(--fs,1));font-weight:700;color:var(--ink);
+  margin:24px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--line);
+}
+#pdfview .pdftext h5:first-child{margin-top:0}
+#pdfview .pdftext p{margin-top:8px}
+#pdfview .pdftext b{color:var(--red);font-weight:600}
+#pdfview .pdftext .line{
+  margin-top:8px;padding:10px 13px;background:var(--surface);border-radius:7px;
+  border-left:3px solid var(--red);font-style:italic;color:var(--ink);
+}
+
+/* lightbox */
+#lb{
+  position:fixed;inset:0;z-index:60;background:rgba(14,10,11,.92);
+  display:none;padding:24px;border:0;width:100%;height:100%;max-width:100%;max-height:100%;
+}
+#lb[open]{display:flex;align-items:center;justify-content:center}
+#lb::backdrop{background:rgba(14,10,11,.7)}
+#lb img{max-width:100%;max-height:82vh;object-fit:contain;border-radius:6px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+#lb .cap{
+  position:absolute;left:0;right:0;bottom:18px;text-align:center;
+  color:#F0E9E9;font-size:calc((12.5px) * var(--fs,1));font-family:var(--mono);padding:0 24px;
+}
+#lbclose{
+  position:absolute;top:16px;right:18px;background:transparent;border:1px solid rgba(255,255,255,.35);
+  color:#fff;border-radius:6px;padding:6px 12px;font-size:calc((12.5px) * var(--fs,1));cursor:pointer;font-family:var(--sans);
+}
+#lbclose:hover{border-color:#fff}
+
+/* ---------- responsive ---------- */
+@media (max-width:920px){
+  .hero{grid-template-columns:1fr}
+  .portrait{max-width:190px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3){border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media (max-width:860px){
+  .shell{flex-direction:column}
+  .rail{
+    width:100%;flex:none;max-height:none;position:static;
+    border-right:0;border-bottom:1px solid var(--line);padding:24px 16px 14px;
+  }
+  .ident{flex-direction:row;align-items:center;gap:16px}
+  .ident .txt{min-width:0}
+  .ident img{width:64px;height:64px;flex:none}
+  .contacts{margin-top:14px}
+  nav{margin-top:16px;padding-top:14px}
+  nav ol{flex-direction:row;overflow-x:auto;gap:4px;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+  nav a{
+    border-left:0;border-bottom:2px solid var(--line);
+    padding:6px 12px;white-space:nowrap;border-radius:0;
+  }
+  nav a.on{border-bottom-color:var(--red)}
+  nav a:hover{border-left-color:transparent;border-bottom-color:var(--line-strong)}
+  nav a.on:hover{border-bottom-color:var(--red)}
+  nav .yr{display:none}
+  .tools{flex-direction:row;flex-wrap:wrap;align-items:center;margin-top:14px;padding-top:14px}
+  .tools .hint{flex:1 1 200px}
+  .skills,.awards{grid-template-columns:1fr}
+  .ev.two > figure{flex-basis:100%}
+}
+@media (max-width:640px){
+  .ev > figure,.ev.two > figure{flex-basis:100%!important;width:100%!important}
+}
+@media (max-width:470px){
+  .stats{grid-template-columns:1fr}
+  .stat{border-left:0}
+  .stat + .stat{border-top:1px solid var(--line)}
+  .mcell{min-width:0;flex:1 1 100%}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+@media print{
+  .rail nav,.tools,#lb{display:none!important}
+  .shell{display:block}
+  .rail{width:100%;border:0;border-bottom:2px solid #D91F27;position:static;padding:0 0 16px}
+  main{padding:0}
+  body{background:#fff;font-size:calc((11pt) * var(--fs,1))}
+  section{page-break-inside:avoid;padding-top:24px}
+  figure{break-inside:avoid}
+  .wrap{padding-block:16px 0}
+}
+</style>
+<style id="themeStyle" data-own="theme">:root{--disp:"Bricolage Grotesque","Be Vietnam Pro",-apple-system,"Segoe UI",sans-serif;--sans:"Be Vietnam Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--fs:1;--rail:288px;--red:#D91F27;--red-deep:hsl(357,75%,37%);--red-soft:hsl(357,75%,71%);--wash:hsl(357,70%,96%);}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--red:hsl(357,75%,58%);--red-deep:hsl(357,70%,70%);--red-soft:hsl(357,75%,72%);--wash:hsl(357,22%,14%);}}
+:root[data-theme="dark"]{--red:hsl(357,75%,58%);--red-deep:hsl(357,70%,70%);--red-soft:hsl(357,75%,72%);--wash:hsl(357,22%,14%);}</style>
+</head>
+<body>
+<div class="shell">
+<aside class="rail">
+<div class="langsw">
+<button type="button" data-lang="vi" class="">VI</button>
+<button type="button" data-lang="en" class="on">EN</button>
+</div>
+<div class="ident">
+<img alt="Ảnh chân dung Lê Hồng Hạnh" src="img-01.jpg">
+<div class="txt">
+<p class="eyebrow" data-en="Professional Portfolio" data-vi="Hồ sơ năng lực">Professional Portfolio</p>
+<h1>Lê Hồng Hạnh</h1>
+<p class="role">Digital Marketing &amp;<br>Marketing Operations</p>
+</div>
+</div>
+<div class="contacts">
+<span data-en="&lt;span class=&quot;k&quot;&gt;Based in&lt;/span&gt;Hanoi, Vietnam" data-vi="&lt;span class=&quot;k&quot; data-en=&quot;Based in&quot;&gt;Nơi ở&lt;/span&gt;Hà Nội, Việt Nam"><span class="k">Based in</span>Hanoi, Vietnam</span>
+<a href="tel:0945006669"><span class="k" data-en="Phone" data-vi="Điện thoại">Phone</span>0945 006 669</a>
+<a href="mailto:hanhlh2fs@gmail.com"><span class="k">Email</span>hanhlh2fs@gmail.com</a>
+<a href="https://www.linkedin.com/in/hanhlh2/" rel="noopener" target="_blank"><span class="k">LinkedIn</span>in/hanhlh2</a>
+</div>
+<nav aria-label="Mục lục hồ sơ">
+<ol>
+<li class="open"><a data-en="About" href="#gioi-thieu" class="on" data-vi="Giới thiệu">About</a></li>
+<li class=""><a data-en="Core Expertise" href="#nang-luc" data-vi="Năng lực chuyên môn" class="">Core Expertise</a></li>
+<li class=""><a href="#fpt-schools" class="">FPT Schools<span class="yr">2026</span></a><ul class="sub"><li><a href="#fpt-schools-m1">Paid Media for Admissions</a></li><li><a href="#fpt-schools-m2">SEO Content Project</a></li><li><a href="#fpt-schools-m3">CRM &amp; Lead Lifecycle Optimization</a></li><li><a href="#fpt-schools-m4">Fwork — AI-enabled Internal Work Management Platform</a></li></ul></li>
+<li class=""><a href="#clickstar" class="">ClickStar<span class="yr">2026</span></a><ul class="sub"><li><a href="#clickstar-m1">H’Pilates</a></li><li><a href="#clickstar-m2">MT Collection Hotels</a></li><li><a href="#clickstar-m3">SFP Accounting</a></li><li><a href="#clickstar-m4">Le Thao Corporate Gifts</a></li><li><a href="#clickstar-m5">2Tech Technology</a></li><li><a href="#clickstar-m6">Vinachem</a></li></ul></li>
+<li class=""><a href="#swinburne" class="">Swinburne Vietnam<span class="yr">2023–26</span></a></li>
+<li class=""><a data-en="FPT University&lt;span class=&quot;yr&quot;&gt;2019–23&lt;/span&gt;" href="#dai-hoc-fpt" data-vi="Đại học FPT&lt;span class=&quot;yr&quot;&gt;2019–23&lt;/span&gt;" class="">FPT University<span class="yr">2019–23</span></a></li>
+<li class=""><a data-en="Ambedo Fiesta&lt;span class=&quot;yr&quot;&gt;Event&lt;/span&gt;" href="#ambedo" data-vi="Ambedo Fiesta&lt;span class=&quot;yr&quot;&gt;Sự kiện&lt;/span&gt;" class="">Ambedo Fiesta<span class="yr">Event</span></a></li>
+<li class=""><a data-en="Tools &amp;amp; Learning" href="#cong-cu" data-vi="Công cụ &amp;amp; học tập" class="">Tools &amp; Learning</a></li>
+<li><a data-en="Contact" href="#lien-he" data-vi="Liên hệ">Contact</a></li>
+</ol>
+</nav>
+
+</aside>
+<main>
+<div class="wrap">
+<!-- ===== HERO ===== -->
+<section id="gioi-thieu" style="padding-top:0">
+<div class="hero">
+<div>
+<p class="eyebrow" data-en="About" data-vi="Giới thiệu">About</p>
+<h2 data-en="Taking products from &lt;em&gt;insight&lt;/em&gt; to &lt;em&gt;revenue&lt;/em&gt;." data-vi="Đưa sản phẩm từ &lt;em&gt;insight&lt;/em&gt; đến &lt;em&gt;doanh số&lt;/em&gt;.">Taking products from <em>insight</em> to <em>revenue</em>.</h2>
+<p class="lede" data-en="Understanding the full product-selling lifecycle lets me run Digital Marketing end-to-end — from market and customer research, strategy, content development and Paid Media/SEO/CRM operations, through to consulting and closing the sale myself." data-vi="Hiểu toàn bộ vòng đời bán sản phẩm giúp tôi triển khai Digital Marketing theo hướng end-to-end, từ nghiên cứu thị trường và khách hàng, xây dựng chiến lược, phát triển nội dung, vận hành Paid Media/SEO/CRM đến trực tiếp tư vấn và chốt sale.">Understanding the full product-selling lifecycle lets me run Digital Marketing end-to-end — from market and customer research, strategy, content development and Paid Media/SEO/CRM operations, through to consulting and closing the sale myself.</p>
+<p class="lede" data-en="Selling directly and earning Best Sale of the Year showed me exactly how insight, messaging, lead quality and conversion rate connect. So I optimise not only marketing metrics but the customer journey that actually generates revenue." data-vi="Trực tiếp bán hàng và đạt danh hiệu Best Sale of the Year giúp tôi nhìn rõ mối liên kết giữa insight, thông điệp, lead quality và tỷ lệ chuyển đổi. Nhờ đó, tôi không chỉ tối ưu các chỉ số marketing mà còn tập trung xây dựng hành trình khách hàng có khả năng tạo doanh thu thực tế.">Selling directly and earning Best Sale of the Year showed me exactly how insight, messaging, lead quality and conversion rate connect. So I optimise not only marketing metrics but the customer journey that actually generates revenue.</p>
+</div>
+<div class="portrait">
+<img alt="Lê Hồng Hạnh" src="img-02.png">
+</div>
+</div>
+<div class="stats">
+<div class="stat">
+<p class="n"><span class="ed" data-k="s1">7</span> <small data-en="B VND/year" data-vi="tỷ VNĐ/năm">B VND/year</small></p>
+<p class="l" data-en="Directly managing and optimising the Digital Marketing budget across &lt;span class=&quot;ed&quot; data-k=&quot;s1b&quot;&gt;18&lt;/span&gt; FPT Schools campuses" data-vi="Trực tiếp quản lý và tối ưu ngân sách Digital Marketing cho hệ thống &lt;span class=&quot;ed&quot; data-k=&quot;s1b&quot;&gt;18&lt;/span&gt; cơ sở FPT Schools">Directly managing and optimising the Digital Marketing budget across <span class="ed" data-k="s1b">18</span> FPT Schools campuses</p>
+</div>
+<div class="stat">
+<p class="n"><span class="ed" data-k="s2">250</span> <small data-en="M VND/month" data-vi="triệu/tháng">M VND/month</small></p>
+<p class="l" data-en="Meta Ads budget under direct management for &lt;span class=&quot;ed&quot; data-k=&quot;s2b&quot;&gt;9&lt;/span&gt; H’Pilates studios" data-vi="Ngân sách Meta Ads đang trực tiếp quản lý cho &lt;span class=&quot;ed&quot; data-k=&quot;s2b&quot;&gt;9&lt;/span&gt; cơ sở H’Pilates">Meta Ads budget under direct management for <span class="ed" data-k="s2b">9</span> H’Pilates studios</p>
+</div>
+<div class="stat">
+<p class="n"><span class="ed" data-en="1,000" data-k="s3" data-vi="1.000">1,000</span> <small data-en="SEO articles" data-vi="bài SEO">SEO articles</small></p>
+<p class="l" data-en="Producing and optimising &lt;span class=&quot;ed&quot; data-k=&quot;s3c&quot;&gt;1,000&lt;/span&gt; SEO articles for the &lt;span class=&quot;ed&quot; data-k=&quot;s3b&quot;&gt;2027–2028&lt;/span&gt; admissions strategy" data-vi="Triển khai và tối ưu &lt;span class=&quot;ed&quot; data-k=&quot;s3c&quot;&gt;1.000&lt;/span&gt; bài viết SEO, phục vụ chiến lược tuyển sinh năm học &lt;span class=&quot;ed&quot; data-k=&quot;s3b&quot;&gt;2027–2028&lt;/span&gt;">Producing and optimising <span class="ed" data-k="s3c">1,000</span> SEO articles for the <span class="ed" data-k="s3b">2027–2028</span> admissions strategy</p>
+</div>
+<div class="stat">
+<p class="n"><span class="ed" data-k="s4">185</span><small data-en="% of KPI" data-vi="% KPI">% of KPI</small></p>
+<p class="l" data-en="Admissions result for the &lt;span class=&quot;ed&quot; data-k=&quot;s4b&quot;&gt;2024–2025&lt;/span&gt; academic year at Swinburne Vietnam" data-vi="Kết quả tuyển sinh năm học &lt;span class=&quot;ed&quot; data-k=&quot;s4b&quot;&gt;2024–2025&lt;/span&gt; tại Swinburne Vietnam">Admissions result for the <span class="ed" data-k="s4b">2024–2025</span> academic year at Swinburne Vietnam</p>
+</div>
+</div>
+</section>
+<!-- ===== SKILLS ===== -->
+<section id="nang-luc">
+<div class="shead">
+<p class="eyebrow" data-en="Expertise" data-vi="Năng lực">Expertise</p>
+<h3 data-en="Core Expertise" data-vi="Năng lực chuyên môn">Core Expertise</h3>
+</div>
+<div class="skills">
+<div class="skill">
+<h4>Meta / Facebook Ads</h4>
+<p data-en="Customer &amp;amp; competitor research, creative briefs, content, cost optimisation and budget allocation by campus performance." data-vi="Nghiên cứu khách hàng &amp;amp; đối thủ, creative brief, content, tối ưu chi phí và phân bổ ngân sách theo hiệu quả từng cơ sở.">Customer &amp; competitor research, creative briefs, content, cost optimisation and budget allocation by campus performance.</p>
+</div>
+<div class="skill">
+<h4>SEO Content &amp; On-page SEO</h4>
+<p data-en="Keyword research, content plans, outlines, SEO copywriting, metadata, internal linking, taxonomy and URL standardisation." data-vi="Keyword research, content plan, outline, SEO copywriting, metadata, internal link, taxonomy và chuẩn hóa URL.">Keyword research, content plans, outlines, SEO copywriting, metadata, internal linking, taxonomy and URL standardisation.</p>
+</div>
+<div class="skill">
+<h4>CRM &amp; Marketing Operations</h4>
+<p data-en="Lead-management rules, status standardisation, lead-lifecycle analysis and detection of nurturing drop-offs." data-vi="Xây quy tắc quản lý lead, chuẩn hóa trạng thái, phân tích lead lifecycle và phát hiện điểm rơi trong chăm sóc.">Lead-management rules, status standardisation, lead-lifecycle analysis and detection of nurturing drop-offs.</p>
+</div>
+<div class="skill">
+<h4>Project Management</h4>
+<p data-en="Taking briefs, coordinating delivery, working directly with partners and reporting results to both management and clients." data-vi="Nhận brief, phối hợp triển khai, làm việc trực tiếp với đối tác và báo cáo kết quả cho cả quản lý lẫn khách hàng.">Taking briefs, coordinating delivery, working directly with partners and reporting results to both management and clients.</p>
+</div>
+<div class="skill">
+<h4>AI-enabled Content Production</h4>
+<p data-en="Detailed scripts, prompt and shot lists, and finished AI video production with consistent character &amp;amp; messaging." data-vi="Phát triển kịch bản chi tiết, prompt/shot list và sản xuất video hoàn chỉnh bằng AI, giữ nhất quán nhân vật &amp;amp; thông điệp.">Detailed scripts, prompt and shot lists, and finished AI video production with consistent character &amp; messaging.</p>
+</div>
+<div class="skill">
+<h4>Admissions &amp; Student Recruitment</h4>
+<p data-en="Advising parents and students, converting admissions, running events and developing referral channels from high schools." data-vi="Tư vấn phụ huynh/học sinh, chuyển đổi tuyển sinh, tổ chức sự kiện và phát triển kênh giới thiệu từ trường THPT.">Advising parents and students, converting admissions, running events and developing referral channels from high schools.</p>
+</div>
+<div class="skill">
+<h4>Event Planning &amp; Execution</h4>
+<p data-en="Planning, coordinating and delivering admissions and experience events; aligning stakeholders, controlling timelines and safeguarding the attendee experience." data-vi="Lập kế hoạch, điều phối và triển khai các sự kiện tuyển sinh/trải nghiệm; phối hợp các bên liên quan, kiểm soát timeline và bảo đảm trải nghiệm người tham dự.">Planning, coordinating and delivering admissions and experience events; aligning stakeholders, controlling timelines and safeguarding the attendee experience.</p>
+</div>
+<div class="skill">
+<h4>Workflow Optimization</h4>
+<p data-en="Delivering work on schedule; continuously standardising processes, adopting tools and refining methods to improve speed, output quality and operating efficiency." data-vi="Chủ động hoàn thành công việc đúng tiến độ; liên tục chuẩn hóa quy trình, ứng dụng công cụ và tối ưu cách làm để nâng cao tốc độ, chất lượng đầu ra và hiệu suất vận hành.">Delivering work on schedule; continuously standardising processes, adopting tools and refining methods to improve speed, output quality and operating efficiency.</p>
+</div>
+</div>
+</section>
+<!-- ===== FPT SCHOOLS ===== -->
+<section id="fpt-schools">
+<div class="shead">
+<p class="eyebrow" data-en="Experience" data-vi="Kinh nghiệm">Experience</p>
+<h3>FPT Schools</h3>
+<p class="meta">
+<span class="rolename">Marketing Executive / Marketing Operations</span>
+<span class="when" data-en="04/2026 – Present" data-vi="04/2026 – Hiện tại">04/2026 – Present</span>
+</p>
+</div>
+<div class="proj" id="fpt-schools-m1">
+<h4 data-en="Paid Media for Admissions &lt;span class=&quot;tag&quot;&gt;Meta Ads&lt;/span&gt;" data-vi="Paid Media cho tuyển sinh &lt;span class=&quot;tag&quot;&gt;Meta Ads&lt;/span&gt;">Paid Media for Admissions <span class="tag">Meta Ads</span></h4>
+<p class="intro" data-en="Running Meta Ads for admissions lead generation through peak season, targeting parents researching schools for the coming academic year." data-vi="Triển khai Meta Ads phục vụ mục tiêu thu lead tuyển sinh trong mùa cao điểm, hướng đến nhóm phụ huynh đang tìm hiểu trường cho năm học mới.">Running Meta Ads for admissions lead generation through peak season, targeting parents researching schools for the coming academic year.</p>
+<div class="mrow">
+<div class="mcell">
+<p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;f1&quot;&gt;7.06&lt;/span&gt; bn VND" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;f1&quot;&gt;7,06&lt;/span&gt; tỷ VNĐ"><span class="ed" data-k="f1">7.06</span> bn VND</p>
+<p class="l" data-en="Total Meta Ads budget directly managed and operated across &lt;span class=&quot;ed&quot; data-k=&quot;f1b&quot;&gt;18&lt;/span&gt; FPT Schools campuses" data-vi="Tổng ngân sách Meta Ads trực tiếp quản lý và vận hành cho hệ thống &lt;span class=&quot;ed&quot; data-k=&quot;f1b&quot;&gt;18&lt;/span&gt; cơ sở FPT Schools">Total Meta Ads budget directly managed and operated across <span class="ed" data-k="f1b">18</span> FPT Schools campuses</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;f2&quot;&gt;171&lt;/span&gt;m+ impressions" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;f2&quot;&gt;171&lt;/span&gt; triệu+ Impressions"><span class="ed" data-k="f2">171</span>m+ impressions</p>
+<p class="l" data-en="Total impressions recorded across the Meta Ads campaigns delivered" data-vi="Tổng lượt hiển thị ghi nhận từ các chiến dịch Meta Ads đã triển khai">Total impressions recorded across the Meta Ads campaigns delivered</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="KPI met" data-vi="Đạt KPI">KPI met</p>
+<p class="l" data-en="FPT Schools met its admissions target per internal results for the year" data-vi="FPT Schools hoàn thành chỉ tiêu tuyển sinh theo kết quả nội bộ năm học">FPT Schools met its admissions target per internal results for the year</p>
+</div>
+</div>
+<ul class="pts">
+<li data-en="Researching parent personas, admissions insights and competitor advertising activity." data-vi="Nghiên cứu chân dung phụ huynh, insight tuyển sinh và hoạt động quảng cáo của đối thủ.">Researching parent personas, admissions insights and competitor advertising activity.</li>
+<li data-en="Developing content angles, messaging and visual direction for Facebook ads." data-vi="Xây dựng content angle, thông điệp và định hướng hình ảnh cho quảng cáo Facebook.">Developing content angles, messaging and visual direction for Facebook ads.</li>
+<li data-en="Tracking performance by campus and region; compiling reports and recommending campaign adjustments." data-vi="Theo dõi hiệu quả theo cơ sở/khu vực; tổng hợp báo cáo và đề xuất điều chỉnh chiến dịch.">Tracking performance by campus and region; compiling reports and recommending campaign adjustments.</li>
+</ul>
+<div class="ev">
+<figure>
+<button data-cap="Báo cáo hiệu quả Meta Ads tuyển sinh FPT Schools — theo dõi chi phí và lead theo cơ sở" type="button"><img alt="Báo cáo hiệu quả Meta Ads tuyển sinh FPT Schools" loading="lazy" src="img-03.jpg"></button>
+<figcaption><span class="no">MC 01</span><span data-en="Admissions Meta Ads performance report — cost and lead volume tracked by campus." data-vi="Báo cáo hiệu quả Meta Ads tuyển sinh — theo dõi chi phí và lượng lead theo từng cơ sở.">Admissions Meta Ads performance report — cost and lead volume tracked by campus.</span></figcaption>
+</figure>
+</div>
+</div>
+<div class="proj" id="fpt-schools-m2">
+<h4>SEO Content Project <span class="tag">SEO</span></h4>
+<p class="intro" data-en="Contributing to an SEO programme for the new admissions season, planned at roughly &lt;span class=&quot;ed&quot; data-k=&quot;f4&quot;&gt;1,000&lt;/span&gt; articles." data-vi="Tham gia triển khai dự án SEO phục vụ mùa tuyển sinh mới, với quy mô kế hoạch khoảng &lt;span class=&quot;ed&quot; data-k=&quot;f4&quot;&gt;1.000&lt;/span&gt; bài viết.">Contributing to an SEO programme for the new admissions season, planned at roughly <span class="ed" data-k="f4">1,000</span> articles.</p>
+<div class="mrow">
+<div class="mcell">
+<p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;f5&quot;&gt;100&lt;/span&gt;+ clusters" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;f5&quot;&gt;100&lt;/span&gt;+ nhóm"><span class="ed" data-k="f5">100</span>+ clusters</p>
+<p class="l" data-en="Keyword clusters by location, school level &amp;amp; search need" data-vi="Nhóm từ khóa theo địa bàn, cấp học &amp;amp; nhu cầu tìm kiếm">Keyword clusters by location, school level &amp; search need</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;f6&quot;&gt;500&lt;/span&gt;+ articles" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;f6&quot;&gt;500&lt;/span&gt;+ bài"><span class="ed" data-k="f6">500</span>+ articles</p>
+<p class="l" data-en="Delivered hands-on" data-vi="Trực tiếp triển khai">Delivered hands-on</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;f8&quot;&gt;1,000&lt;/span&gt; articles" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;f8&quot;&gt;1.000&lt;/span&gt; bài"><span class="ed" data-k="f8">1,000</span> articles</p>
+<p class="l" data-en="Planned scope of the project" data-vi="Quy mô kế hoạch của dự án">Planned scope of the project</p>
+</div>
+</div>
+<ul class="pts">
+<li data-en="Running the full SEO content process: keyword research, search-intent clustering, outlines, on-page checklists and internal-linking direction." data-vi="Thực hiện quy trình SEO content từ keyword research, phân nhóm search intent, lên outline đến on-page checklist và internal-linking direction.">Running the full SEO content process: keyword research, search-intent clustering, outlines, on-page checklists and internal-linking direction.</li>
+<li data-en="Working with the communications team to review and publish articles." data-vi="Phối hợp đội ngũ truyền thông kiểm duyệt và xuất bản bài viết.">Working with the communications team to review and publish articles.</li>
+</ul>
+<div class="ev">
+<figure>
+<button data-cap="Content tracker SEO — trạng thái từng bài theo nhóm từ khóa, người viết và tiến độ xuất bản" type="button"><img alt="Content tracker SEO của dự án FPT Schools" loading="lazy" src="img-04.jpg"></button>
+<figcaption><span class="no">MC 02</span><span data-en="SEO content tracker — status of each article by keyword cluster, owner and publishing progress." data-vi="Content tracker SEO — trạng thái từng bài theo nhóm từ khóa, người phụ trách và tiến độ xuất bản.">SEO content tracker — status of each article by keyword cluster, owner and publishing progress.</span></figcaption>
+</figure>
+</div>
+</div>
+<div class="proj" id="fpt-schools-m3">
+<h4>CRM &amp; Lead Lifecycle Optimization <span class="tag">Getfly CRM</span></h4>
+<p class="intro" data-en="Helping build and standardise CRM operations on Getfly, focused on data quality and the effectiveness of lead nurturing." data-vi="Tham gia xây dựng và chuẩn hóa vận hành CRM trên Getfly, tập trung vào chất lượng dữ liệu và hiệu quả chăm sóc lead.">Helping build and standardise CRM operations on Getfly, focused on data quality and the effectiveness of lead nurturing.</p>
+<ul class="pts">
+<li data-en="Defining rules for call status, interest level, consulting notes and the re-nurturing workflow." data-vi="Xây dựng rule cho trạng thái gọi điện, mức độ quan tâm, ghi chú tư vấn và quy trình chăm sóc lại.">Defining rules for call status, interest level, consulting notes and the re-nurturing workflow.</li>
+<li data-en="Analysing lead data to find drop-off points along the consulting journey." data-vi="Phân tích dữ liệu lead để phát hiện các điểm rơi trong hành trình tư vấn.">Analysing lead data to find drop-off points along the consulting journey.</li>
+<li data-en="&lt;strong&gt;Finding:&lt;/strong&gt; leads interested in the following academic year were tagged “not interested / not a fit” instead of entering the right nurturing flow." data-vi="&lt;strong&gt;Phát hiện:&lt;/strong&gt; lead có nhu cầu cho năm học sau bị gắn “không quan tâm / không phù hợp” thay vì đưa vào luồng nurturing phù hợp."><strong>Finding:</strong> leads interested in the following academic year were tagged “not interested / not a fit” instead of entering the right nurturing flow.</li>
+<li data-en="&lt;strong&gt;Finding:&lt;/strong&gt; a segment of leads showed clear interest but had received no follow-up for a long period." data-vi="&lt;strong&gt;Phát hiện:&lt;/strong&gt; nhóm lead có tín hiệu quan tâm nhưng thiếu hành vi follow-up trong thời gian dài."><strong>Finding:</strong> a segment of leads showed clear interest but had received no follow-up for a long period.</li>
+<li data-en="Building a lead-lifecycle diagnostic dashboard to track lead quality, nurturing behaviour and areas to optimise." data-vi="Xây dựng dashboard chẩn đoán lead lifecycle, hỗ trợ theo dõi chất lượng lead, hành vi chăm sóc và các điểm cần tối ưu.">Building a lead-lifecycle diagnostic dashboard to track lead quality, nurturing behaviour and areas to optimise.</li>
+</ul>
+<p class="note" data-en="CRM dashboard available on request — all customer data anonymised before inclusion in this portfolio." data-vi="Dashboard CRM cung cấp khi được yêu cầu — toàn bộ dữ liệu khách hàng đã được ẩn danh trước khi đưa vào hồ sơ.">CRM dashboard available on request — all customer data anonymised before inclusion in this portfolio.</p>
+</div>
+<div class="proj" id="fpt-schools-m4">
+<h4>Fwork — AI-enabled Internal Work Management Platform <span class="tag">Product</span></h4>
+<p class="intro" data-en="Proposed, designed and built Fwork with AI for the head-office team, with a roadmap to roll it out to the campuses." data-vi="Đề xuất, thiết kế và phát triển Fwork bằng AI cho khối văn phòng điều hành, với định hướng nhân rộng sang các cơ sở.">Proposed, designed and built Fwork with AI for the head-office team, with a roadmap to roll it out to the campuses.</p>
+<ul class="pts">
+<li data-en="Involved end-to-end: product concept, interface design, development, testing and refinement." data-vi="Tham gia xuyên suốt từ ý tưởng sản phẩm, thiết kế giao diện, phát triển, kiểm thử đến chỉnh sửa.">Involved end-to-end: product concept, interface design, development, testing and refinement.</li>
+<li data-en="Built the feature set: role-based login, task management, performance dashboard, workload allocation, approval and review, automated reporting, AI analysis, messaging and notifications." data-vi="Xây dựng các chức năng: phân quyền đăng nhập, quản lý công việc, dashboard hiệu suất, phân bổ tải công việc, phê duyệt/đánh giá, báo cáo – tự động hóa, AI phân tích, tin nhắn và thông báo.">Built the feature set: role-based login, task management, performance dashboard, workload allocation, approval and review, automated reporting, AI analysis, messaging and notifications.</li>
+<li data-en="Supports tracking of progress, on-time rate, overdue tasks and performance by individual and team." data-vi="Hỗ trợ quản lý tiến độ, tỷ lệ đúng hạn, công việc quá hạn và hiệu suất theo nhân sự/nhóm.">Supports tracking of progress, on-time rate, overdue tasks and performance by individual and team.</li>
+</ul>
+<div class="ev">
+<figure>
+<button data-cap="Dashboard hiệu suất trên Fwork — tiến độ, tỷ lệ đúng hạn và tải công việc theo nhân sự" type="button"><img alt="Dashboard hiệu suất của nền tảng Fwork" loading="lazy" src="img-05.jpg"></button>
+<figcaption><span class="no">MC 03</span><span data-en="Fwork performance dashboard — progress, on-time rate and workload allocation per person." data-vi="Dashboard hiệu suất Fwork — tiến độ, tỷ lệ đúng hạn và phân bổ tải công việc theo nhân sự.">Fwork performance dashboard — progress, on-time rate and workload allocation per person.</span></figcaption>
+</figure>
+</div>
+</div>
+</section>
+<!-- ===== CLICKSTAR ===== -->
+<section id="clickstar">
+<div class="shead">
+<p class="eyebrow" data-en="Experience" data-vi="Kinh nghiệm">Experience</p>
+<h3>ClickStar</h3>
+<p class="meta">
+<span class="rolename">Client-facing Project Manager &amp; Digital Marketing Executive</span>
+<span class="when" data-en="04/2026 – Present" data-vi="04/2026 – Hiện tại">04/2026 – Present</span>
+</p>
+</div>
+<p class="body-copy" data-en="Managing and personally delivering Digital Marketing projects for partner businesses: taking briefs, working with clients, coordinating internally, executing and reporting results to both management and partners." data-vi="Quản lý và trực tiếp triển khai dự án Digital Marketing cho các doanh nghiệp đối tác: nhận brief, làm việc với khách hàng, phối hợp nội bộ, triển khai và báo cáo kết quả cho cả quản lý lẫn đối tác.">Managing and personally delivering Digital Marketing projects for partner businesses: taking briefs, working with clients, coordinating internally, executing and reporting results to both management and partners.</p>
+<div class="proj" id="clickstar-m1">
+<h4 data-en="H’Pilates &lt;span class=&quot;tag&quot;&gt;Meta Ads · &lt;span class=&quot;ed&quot; data-k=&quot;c1&quot;&gt;9&lt;/span&gt; studios nationwide&lt;/span&gt;" data-vi="H’Pilates &lt;span class=&quot;tag&quot;&gt;Meta Ads · &lt;span class=&quot;ed&quot; data-k=&quot;c1&quot;&gt;9&lt;/span&gt; cơ sở toàn quốc&lt;/span&gt;">H’Pilates <span class="tag">Meta Ads · <span class="ed" data-k="c1">9</span> studios nationwide</span></h4>
+<div class="mrow">
+<div class="mcell">
+<p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;c2&quot;&gt;250&lt;/span&gt;m/month" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;c2&quot;&gt;250&lt;/span&gt; tr/tháng"><span class="ed" data-k="c2">250</span>m/month</p>
+<p class="l" data-en="Facebook/Messenger Ads budget managed" data-vi="Ngân sách Facebook/Messenger Ads quản lý">Facebook/Messenger Ads budget managed</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;c4&quot;&gt;9&lt;/span&gt; studios" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;c4&quot;&gt;9&lt;/span&gt; cơ sở"><span class="ed" data-k="c4">9</span> studios</p>
+<p class="l" data-en="Tracking &amp;amp; reallocating budget by studio performance" data-vi="Theo dõi &amp;amp; điều chỉnh ngân sách theo hiệu quả từng cơ sở">Tracking &amp; reallocating budget by studio performance</p>
+</div>
+</div>
+<ul class="pts">
+<li data-en="Customer and competitor research; content development, visual direction and ad messaging." data-vi="Nghiên cứu khách hàng, đối thủ; phát triển nội dung, visual direction và thông điệp quảng cáo.">Customer and competitor research; content development, visual direction and ad messaging.</li>
+<li data-en="Monitoring metrics and reallocating budget according to each studio's performance." data-vi="Theo dõi chỉ số và điều chỉnh phân bổ ngân sách theo hiệu quả của từng cơ sở.">Monitoring metrics and reallocating budget according to each studio's performance.</li>
+</ul>
+<div class="ev">
+<figure>
+<button data-cap="Báo cáo Meta Ads H’Pilates — chi phí mỗi cuộc trò chuyện theo từng cơ sở" type="button"><img alt="Báo cáo Meta Ads H'Pilates" loading="lazy" src="img-06.jpg"></button>
+<figcaption><span class="no">MC 04</span><span data-en="H’Pilates Meta Ads report — cost per conversation by studio." data-vi="Báo cáo Meta Ads H’Pilates — chi phí mỗi cuộc trò chuyện theo cơ sở.">H’Pilates Meta Ads report — cost per conversation by studio.</span></figcaption>
+</figure>
+</div>
+<div class="ev grid3 wide">
+<figure>
+<button data-cap="Creative quảng cáo H’Pilates — thông điệp và định hướng hình ảnh" type="button"><img alt="Creative quảng cáo H'Pilates" loading="lazy" src="img-07.jpg"></button>
+<figcaption><span class="no">MC 05</span><span data-en="Membership-package creative — messaging and visual direction." data-vi="Creative gói tập — thông điệp và định hướng hình ảnh.">Membership-package creative — messaging and visual direction.</span></figcaption>
+</figure>
+<figure>
+<button data-cap="Quảng cáo khai trương cơ sở H’Pilates Long Biên" type="button"><img alt="Quảng cáo khai trương H'Pilates Long Biên" loading="lazy" src="img-08.jpg"></button>
+<figcaption><span class="no">MC 06</span><span data-en="Long Bien studio opening campaign — free trial session offer." data-vi="Chiến dịch khai trương cơ sở Long Biên — ưu đãi buổi tập trải nghiệm.">Long Bien studio opening campaign — free trial session offer.</span></figcaption>
+</figure>
+<figure>
+<button data-cap="Quảng cáo gói tập H’Pilates cơ sở 240B Hiệp Bình" type="button"><img alt="Quảng cáo H'Pilates 240B Hiệp Bình" loading="lazy" src="img-09.jpg"></button>
+<figcaption><span class="no">MC 07</span><span data-en="240B Hiep Binh studio campaign — 1:1, 1:2 and 1:4 training formats." data-vi="Chiến dịch cơ sở 240B Hiệp Bình — hình thức tập 1:1, 1:2, 1:4.">240B Hiep Binh studio campaign — 1:1, 1:2 and 1:4 training formats.</span></figcaption>
+</figure>
+</div>
+</div>
+<div class="proj" id="clickstar-m2">
+<h4>MT Collection Hotels <span class="tag">Paid Media · SEO</span></h4>
+<p class="intro" data-en="Running Meta Ads for the hotel group in Ninh Binh and Ha Long, plus SEO content for the travel–hospitality website." data-vi="Triển khai Meta Ads cho hệ thống khách sạn tại Ninh Bình và Hạ Long, kèm nội dung SEO cho website du lịch – khách sạn.">Running Meta Ads for the hotel group in Ninh Binh and Ha Long, plus SEO content for the travel–hospitality website.</p>
+<div class="mrow">
+<div class="mcell">
+<p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;c5&quot;&gt;200,000&lt;/span&gt; VND/day" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;c5&quot;&gt;200.000&lt;/span&gt; VNĐ/ngày"><span class="ed" data-k="c5">200,000</span> VND/day</p>
+<p class="l" data-en="Advertising budget managed" data-vi="Ngân sách quảng cáo quản lý">Advertising budget managed</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;c7&quot;&gt;3&lt;/span&gt; properties" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;c7&quot;&gt;3&lt;/span&gt; cơ sở"><span class="ed" data-k="c7">3</span> properties</p>
+<p class="l" data-en="The MT Collection hotel group" data-vi="Hệ thống khách sạn MT Collection">The MT Collection hotel group</p>
+</div>
+</div>
+<ul class="pts">
+<li data-en="Running and optimising Facebook Ads to increase enquiry and booking messages." data-vi="Triển khai và tối ưu Facebook Ads với mục tiêu tăng số lượng tin nhắn tư vấn/đặt phòng.">Running and optimising Facebook Ads to increase enquiry and booking messages.</li>
+<li data-en="Tracking campaign performance and optimising budget, audiences, ad content and cost per conversation." data-vi="Theo dõi hiệu quả chiến dịch, tối ưu ngân sách, tệp khách hàng, nội dung quảng cáo và chỉ số chi phí trên mỗi cuộc trò chuyện.">Tracking campaign performance and optimising budget, audiences, ad content and cost per conversation.</li>
+<li data-en="Keyword research, content planning and SEO article production to grow the site's organic visibility in search." data-vi="Nghiên cứu từ khóa, lập kế hoạch và sản xuất bài viết SEO nhằm tăng khả năng hiển thị tự nhiên của website trên công cụ tìm kiếm.">Keyword research, content planning and SEO article production to grow the site's organic visibility in search.</li>
+</ul>
+<div class="ev">
+<figure>
+<button data-cap="Kế hoạch &amp; tracker nội dung SEO cho MT Collection Hotels" type="button"><img alt="Tracker nội dung SEO MT Collection" loading="lazy" src="img-10.jpg"></button>
+<figcaption><span class="no">MC 06</span><span data-en="SEO content plan &amp;amp; tracker for the hotel website." data-vi="Kế hoạch &amp;amp; tracker nội dung SEO cho website khách sạn.">SEO content plan &amp; tracker for the hotel website.</span></figcaption>
+</figure>
+</div>
+</div>
+<div class="proj" id="clickstar-m3">
+<h4>SFP Accounting <span class="tag">Technical · On-page SEO</span></h4>
+<p class="intro" data-en="Fixing un-indexed articles and strengthening the website's technical SEO foundation." data-vi="Xử lý tình trạng bài viết chưa được index và tối ưu nền tảng SEO của website.">Fixing un-indexed articles and strengthening the website's technical SEO foundation.</p>
+<ul class="pts">
+<li data-en="Auditing noindex, sitemap, canonical tags, heading structure, titles, meta descriptions and internal links." data-vi="Rà soát noindex, sitemap, canonical, cấu trúc heading, title, meta description và liên kết nội bộ.">Auditing noindex, sitemap, canonical tags, heading structure, titles, meta descriptions and internal links.</li>
+<li data-en="Setting up and verifying Google Search Console, Google Analytics 4 and Google Business Profile." data-vi="Thiết lập/kiểm tra Google Search Console, Google Analytics 4, Google Business Profile.">Setting up and verifying Google Search Console, Google Analytics 4 and Google Business Profile.</li>
+<li data-en="Optimising page speed, WebP images, lazy loading, alt text and schema markup." data-vi="Tối ưu tốc độ tải trang, ảnh WebP, lazy-load, alt text và schema.">Optimising page speed, WebP images, lazy loading, alt text and schema markup.</li>
+<li data-en="Tracking indexing progress, queries and CTR; rolling out a new SEO content plan." data-vi="Theo dõi tiến độ index, truy vấn và CTR; triển khai kế hoạch content SEO mới.">Tracking indexing progress, queries and CTR; rolling out a new SEO content plan.</li>
+</ul>
+<div class="ev">
+<figure>
+<button data-cap="Kế hoạch SEO SFP Accounting — hạng mục kỹ thuật, on-page và lộ trình nội dung" type="button"><img alt="Kế hoạch SEO cho SFP Accounting" loading="lazy" src="img-11.jpg"></button>
+<figcaption><span class="no">MC 07</span><span data-en="SEO plan — technical items, on-page work and the content roadmap." data-vi="Kế hoạch SEO — hạng mục kỹ thuật, on-page và lộ trình nội dung.">SEO plan — technical items, on-page work and the content roadmap.</span></figcaption>
+</figure>
+</div>
+</div>
+<div class="proj" id="clickstar-m4">
+<h4 data-en="Le Thao Corporate Gifts &lt;span class=&quot;tag&quot;&gt;B2B E-commerce Catalog&lt;/span&gt;" data-vi="Quà tặng Lê Thảo &lt;span class=&quot;tag&quot;&gt;B2B E-commerce Catalog&lt;/span&gt;">Le Thao Corporate Gifts <span class="tag">B2B E-commerce Catalog</span></h4>
+<p class="intro" data-en="Standardising a catalogue of over &lt;span class=&quot;ed&quot; data-k=&quot;c8&quot;&gt;500&lt;/span&gt; corporate-gift SKUs across &lt;span class=&quot;ed&quot; data-k=&quot;c9&quot;&gt;16&lt;/span&gt; categories." data-vi="Chuẩn hóa catalog hơn &lt;span class=&quot;ed&quot; data-k=&quot;c8&quot;&gt;500&lt;/span&gt; SKU quà tặng doanh nghiệp thuộc &lt;span class=&quot;ed&quot; data-k=&quot;c9&quot;&gt;16&lt;/span&gt; danh mục.">Standardising a catalogue of over <span class="ed" data-k="c8">500</span> corporate-gift SKUs across <span class="ed" data-k="c9">16</span> categories.</p>
+<div class="mrow">
+<div class="mcell">
+<p class="n"><span class="ed" data-k="c10">500</span>+ SKU</p>
+<p class="l" data-en="Products with fully standardised data" data-vi="Sản phẩm được chuẩn hóa toàn bộ dữ liệu">Products with fully standardised data</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;c11&quot;&gt;16&lt;/span&gt; categories" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;c11&quot;&gt;16&lt;/span&gt; danh mục"><span class="ed" data-k="c11">16</span> categories</p>
+<p class="l" data-en="Full catalogue re-classification" data-vi="Phân loại lại toàn bộ catalog">Full catalogue re-classification</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;c12&quot;&gt;4–5&lt;/span&gt; images" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;c12&quot;&gt;4–5&lt;/span&gt; ảnh"><span class="ed" data-k="c12">4–5</span> images</p>
+<p class="l" data-en="Image standard defined per product" data-vi="Định hướng chuẩn hóa hình ảnh cho mỗi sản phẩm">Image standard defined per product</p>
+</div>
+</div>
+<ul class="pts">
+<li data-en="Upgrading product photography from the original source images using AI." data-vi="Nâng cấp hình ảnh sản phẩm từ nguồn ảnh gốc bằng AI.">Upgrading product photography from the original source images using AI.</li>
+<li data-en="Writing and standardising product names, short and long descriptions, keywords, URL slugs and category assignment." data-vi="Viết và chuẩn hóa tên sản phẩm, mô tả ngắn, mô tả chi tiết, từ khóa, URL slug và phân loại danh mục.">Writing and standardising product names, short and long descriptions, keywords, URL slugs and category assignment.</li>
+<li data-en="Optimising product detail pages for SEO and the B2B customer experience." data-vi="Tối ưu product detail page theo định hướng SEO và trải nghiệm khách hàng B2B.">Optimising product detail pages for SEO and the B2B customer experience.</li>
+<li data-en="Contributing to a website that supports the company profile, corporate outreach and tender bids." data-vi="Góp phần xây dựng website phục vụ hồ sơ năng lực, tiếp cận khách hàng doanh nghiệp và dự án đấu thầu.">Contributing to a website that supports the company profile, corporate outreach and tender bids.</li>
+</ul>
+<div class="ev two">
+<figure>
+<button data-cap="Nâng cấp ảnh sản phẩm bằng AI — so sánh trước và sau" type="button"><img alt="So sánh ảnh sản phẩm trước và sau khi nâng cấp bằng AI" loading="lazy" src="img-12.jpg"></button>
+<figcaption><span class="no">MC 08</span><span data-en="AI product-image upgrade — before and after." data-vi="Nâng cấp ảnh sản phẩm bằng AI — trước và sau.">AI product-image upgrade — before and after.</span></figcaption>
+</figure>
+<figure>
+<button data-cap="Product detail page sau khi chuẩn hóa tên, mô tả, từ khóa và slug" type="button"><img alt="Trang chi tiết sản phẩm sau khi chuẩn hóa" loading="lazy" src="img-13.jpg"></button>
+<figcaption><span class="no">MC 09</span><span data-en="Product detail page after standardising name, description, keywords and slug." data-vi="Product detail page sau khi chuẩn hóa tên, mô tả, từ khóa và slug.">Product detail page after standardising name, description, keywords and slug.</span></figcaption>
+</figure>
+</div>
+</div>
+<div class="proj" id="clickstar-m5">
+<h4 data-en="2Tech Technology &lt;span class=&quot;tag&quot;&gt;Product Data · SEO&lt;/span&gt;" data-vi="2Tech Công Nghệ &lt;span class=&quot;tag&quot;&gt;Product Data · SEO&lt;/span&gt;">2Tech Technology <span class="tag">Product Data · SEO</span></h4>
+<div class="mrow">
+<div class="mcell">
+<p class="n"><span class="ed" data-k="c13">200</span>+ SKU</p>
+<p class="l" data-en="Technology products standardised" data-vi="Thiết bị công nghệ được chuẩn hóa">Technology products standardised</p>
+</div>
+<div class="mcell">
+<p class="n">Taxonomy</p>
+<p class="l" data-en="Category classification &amp;amp; product data structure" data-vi="Phân loại danh mục &amp;amp; cấu trúc dữ liệu sản phẩm">Category classification &amp; product data structure</p>
+</div>
+</div>
+<ul class="pts">
+<li data-en="Category classification, product-name standardisation, keyword mapping, URLs, SEO titles and product descriptions." data-vi="Phân loại danh mục, chuẩn hóa tên sản phẩm, keyword mapping, URL, title SEO và mô tả sản phẩm.">Category classification, product-name standardisation, keyword mapping, URLs, SEO titles and product descriptions.</li>
+<li data-en="Building a product data structure that supports search, catalogue management and a more professional website." data-vi="Xây dựng cấu trúc dữ liệu sản phẩm hỗ trợ tìm kiếm, quản trị catalog và cải thiện mức độ chuyên nghiệp của website.">Building a product data structure that supports search, catalogue management and a more professional website.</li>
+</ul>
+<div class="ev">
+<figure>
+<button data-cap="Tracker chuẩn hóa dữ liệu sản phẩm &amp; SEO cho 2Tech Công Nghệ" type="button"><img alt="Tracker chuẩn hóa dữ liệu sản phẩm 2Tech" loading="lazy" src="img-14.jpg"></button>
+<figcaption><span class="no">MC 10</span><span data-en="Product data &amp;amp; SEO standardisation tracker, SKU by SKU." data-vi="Tracker chuẩn hóa dữ liệu sản phẩm &amp;amp; SEO theo từng SKU.">Product data &amp; SEO standardisation tracker, SKU by SKU.</span></figcaption>
+</figure>
+</div>
+</div>
+<div class="proj" id="clickstar-m6">
+<h4>Vinachem <span class="tag">AI Video Content</span></h4>
+<p class="intro" data-en="A digital content project for Vietnam National Chemical Group as part of its digital transformation." data-vi="Dự án nội dung số cho Tập đoàn Hóa chất Việt Nam trong bối cảnh chuyển đổi số.">A digital content project for Vietnam National Chemical Group as part of its digital transformation.</p>
+<ul class="pts">
+<li data-en="Taking the client's outline and developing it into a detailed production script." data-vi="Tiếp nhận khung kịch bản từ khách hàng và phát triển thành kịch bản sản xuất chi tiết.">Taking the client's outline and developing it into a detailed production script.</li>
+<li data-en="Writing dialogue, shot breakdowns, visual direction, camera angles, sound, edit pacing and AI prompts." data-vi="Xây dựng lời thoại, phân cảnh, chỉ dẫn hình ảnh, góc máy, âm thanh, nhịp dựng và prompt cho AI.">Writing dialogue, shot breakdowns, visual direction, camera angles, sound, edit pacing and AI prompts.</li>
+<li data-en="Using AI to turn the script into a finished video with consistent character, visuals and messaging." data-vi="Sử dụng AI để chuyển kịch bản thành video hoàn chỉnh, đảm bảo tính nhất quán về nhân vật, hình ảnh và thông điệp.">Using AI to turn the script into a finished video with consistent character, visuals and messaging.</li>
+</ul>
+<div class="videocard">
+<a class="vthumb" href="https://drive.google.com/file/d/18fT3_do_KIj6LQYtBX87y_VDLbzRlohs/view?usp=drive_link" rel="noopener" target="_blank">
+<img alt="Thumbnail video Vinachem NEO" loading="lazy" src="img-15.jpg">
+<span aria-hidden="true" class="playbtn">▶</span>
+</a>
+<div class="vmeta">
+<p class="vtitle">Vinachem NEO</p>
+<p class="vdesc" data-en="A finished video built with AI from a detailed production script — consistent character, visuals and messaging throughout." data-vi="Video hoàn chỉnh dựng bằng AI từ kịch bản sản xuất chi tiết — nhất quán nhân vật, hình ảnh và thông điệp xuyên suốt.">A finished video built with AI from a detailed production script — consistent character, visuals and messaging throughout.</p>
+<div class="vbtns">
+<a class="vbtn" data-en="▶ Watch video" href="https://drive.google.com/file/d/18fT3_do_KIj6LQYtBX87y_VDLbzRlohs/view?usp=drive_link" rel="noopener" target="_blank" data-vi="▶ Xem video">▶ Watch video</a>
+<button class="vbtn ghost" data-en="Read the script" data-openscript="" data-pdftitle="Bộ kịch bản Vinachem NEO — 05 video AI (Đợt 1)" type="button" data-vi="Đọc kịch bản">Read the script</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== SWINBURNE ===== -->
+<section id="swinburne">
+<div class="shead">
+<p class="eyebrow" data-en="Experience" data-vi="Kinh nghiệm">Experience</p>
+<h3>Swinburne Vietnam</h3>
+<p class="meta">
+<span class="rolename">Admissions &amp; Student Recruitment Consultant</span>
+<span class="when">11/2023 – 03/2026</span>
+</p>
+</div>
+<ul class="awards">
+<li data-en="&lt;span class=&quot;n&quot;&gt;&lt;span class=&quot;ed&quot; data-k=&quot;w1&quot;&gt;185&lt;/span&gt;% of KPI&lt;/span&gt;Admissions result, &lt;span class=&quot;ed&quot; data-k=&quot;w2&quot;&gt;2024–2025&lt;/span&gt; academic year" data-vi="&lt;span class=&quot;n&quot;&gt;&lt;span class=&quot;ed&quot; data-k=&quot;w1&quot;&gt;185&lt;/span&gt;% KPI&lt;/span&gt;Kết quả tuyển sinh năm học &lt;span class=&quot;ed&quot; data-k=&quot;w2&quot;&gt;2024–2025&lt;/span&gt;"><span class="n"><span class="ed" data-k="w1">185</span>% of KPI</span>Admissions result, <span class="ed" data-k="w2">2024–2025</span> academic year</li>
+<li data-en="&lt;span class=&quot;n&quot;&gt;Best Sales&lt;/span&gt;Award for the &lt;span class=&quot;ed&quot; data-k=&quot;w3&quot;&gt;2024–2025&lt;/span&gt; academic year" data-vi="&lt;span class=&quot;n&quot;&gt;Best Sales&lt;/span&gt;Danh hiệu năm học &lt;span class=&quot;ed&quot; data-k=&quot;w3&quot;&gt;2024–2025&lt;/span&gt;"><span class="n">Best Sales</span>Award for the <span class="ed" data-k="w3">2024–2025</span> academic year</li>
+<li><span class="n">Outstanding</span>Outstanding Admissions Consultant — Swinburne <span class="ed" data-k="w4">2025</span></li>
+<li data-en="&lt;span class=&quot;n&quot;&gt;&lt;span class=&quot;ed&quot; data-k=&quot;w5&quot;&gt;100&lt;/span&gt;+ schools&lt;/span&gt;High schools across northern Vietnam reached &amp;amp; engaged" data-vi="&lt;span class=&quot;n&quot;&gt;&lt;span class=&quot;ed&quot; data-k=&quot;w5&quot;&gt;100&lt;/span&gt;+ trường&lt;/span&gt;Trường THPT khu vực miền Bắc đã tiếp cận &amp;amp; truyền thông"><span class="n"><span class="ed" data-k="w5">100</span>+ schools</span>High schools across northern Vietnam reached &amp; engaged</li>
+</ul>
+<ul class="pts">
+<li data-en="Advising students and parents on programmes, tuition, entry requirements and scholarships; accompanying them from first interest to enrolment." data-vi="Tư vấn trực tiếp cho học sinh và phụ huynh về chương trình học, học phí, điều kiện đầu vào và học bổng; đồng hành từ giai đoạn quan tâm đến đăng ký nhập học.">Advising students and parents on programmes, tuition, entry requirements and scholarships; accompanying them from first interest to enrolment.</li>
+<li data-en="Organising and running Info Day admissions events; advising and hosting parents and students on the day." data-vi="Tổ chức và vận hành sự kiện tuyển sinh Info Day; trực tiếp tư vấn, chăm sóc phụ huynh/học sinh tại sự kiện.">Organising and running Info Day admissions events; advising and hosting parents and students on the day.</li>
+<li data-en="Building relationships with teachers, school boards and career counsellors at high schools; developing referrals from teachers, past parents and students." data-vi="Xây dựng mối quan hệ với giáo viên, ban giám hiệu và cán bộ tư vấn hướng nghiệp tại trường THPT; phát triển nguồn referral từ giáo viên, phụ huynh cũ và học sinh.">Building relationships with teachers, school boards and career counsellors at high schools; developing referrals from teachers, past parents and students.</li>
+<li data-en="Working with the Academic Office to assess applications and support admissions for international and transfer students." data-vi="Phối hợp Phòng Đào tạo đánh giá điều kiện hồ sơ, hỗ trợ quy trình xét tuyển cho học sinh quốc tế và học sinh chuyển tiếp.">Working with the Academic Office to assess applications and support admissions for international and transfer students.</li>
+<li data-en="Contributing business requirements for the CRM: data fields, display categories and operating logic." data-vi="Đóng góp yêu cầu nghiệp vụ cho CRM: trường dữ liệu, danh mục hiển thị và logic vận hành.">Contributing business requirements for the CRM: data fields, display categories and operating logic.</li>
+<li data-en="Training and mentoring new admissions consultants." data-vi="Đào tạo, hướng dẫn nhân sự tư vấn tuyển sinh mới.">Training and mentoring new admissions consultants.</li>
+</ul>
+<div class="ev grid3">
+<figure>
+<button data-cap="Chứng nhận Outstanding Admissions Consultant — Swinburne Vietnam 2025" type="button"><img alt="Chứng nhận Outstanding Admissions Consultant" loading="lazy" src="img-16.jpg"></button>
+<figcaption><span class="no">MC 11</span><span data-en="Outstanding Admissions Consultant certificate — Swinburne 2025." data-vi="Chứng nhận Outstanding Admissions Consultant — Swinburne 2025.">Outstanding Admissions Consultant certificate — Swinburne 2025.</span></figcaption>
+</figure>
+<figure>
+<button data-cap="Tư vấn trực tiếp phụ huynh và học sinh tại Swinburne Vietnam" type="button"><img alt="Tư vấn trực tiếp phụ huynh và học sinh" loading="lazy" src="img-17.jpg"></button>
+<figcaption><span class="no">MC 12</span><span data-en="Advising parents and students in person." data-vi="Tư vấn trực tiếp phụ huynh và học sinh.">Advising parents and students in person.</span></figcaption>
+</figure>
+<figure>
+<button data-cap="Vận hành sự kiện tuyển sinh Info Day" type="button"><img alt="Hoạt động sự kiện tuyển sinh Info Day" loading="lazy" src="img-18.jpg"></button>
+<figcaption><span class="no">MC 13</span><span data-en="Running an Info Day admissions event." data-vi="Vận hành sự kiện tuyển sinh Info Day.">Running an Info Day admissions event.</span></figcaption>
+</figure>
+</div>
+</section>
+<!-- ===== DAI HOC FPT ===== -->
+<section id="dai-hoc-fpt">
+<div class="shead">
+<p class="eyebrow" data-en="Experience" data-vi="Kinh nghiệm">Experience</p>
+<h3 data-en="FPT University" data-vi="Đại học FPT">FPT University</h3>
+<p class="meta">
+<span class="rolename">Admissions Collaborator</span>
+<span class="when">11/2019 – 05/2023</span>
+</p>
+</div>
+<ul class="pts">
+<li data-en="Contacting parents to share initial programme information and capture their needs." data-vi="Liên hệ phụ huynh để cung cấp thông tin ban đầu về chương trình đào tạo và ghi nhận nhu cầu.">Contacting parents to share initial programme information and capture their needs.</li>
+<li data-en="Qualifying interested leads and handing them to the admissions consulting team." data-vi="Phân loại lead quan tâm, chuyển giao cho đội ngũ tư vấn tuyển sinh tiếp tục chăm sóc.">Qualifying interested leads and handing them to the admissions consulting team.</li>
+<li data-en="Inviting and hosting parents at events, campus tours and on-campus experience activities." data-vi="Mời và đón tiếp phụ huynh tham gia sự kiện, campus tour và hoạt động trải nghiệm tại trường.">Inviting and hosting parents at events, campus tours and on-campus experience activities.</li>
+<li data-en="Taking part in outreach and career-guidance sessions at high schools." data-vi="Tham gia hoạt động truyền thông, tư vấn hướng nghiệp tại các trường THPT.">Taking part in outreach and career-guidance sessions at high schools.</li>
+<li data-en="Supporting general events and club activities; hosting as MC for several programmes." data-vi="Hỗ trợ các sự kiện chung và hoạt động câu lạc bộ; đảm nhiệm vai trò MC trong một số chương trình.">Supporting general events and club activities; hosting as MC for several programmes.</li>
+</ul>
+</section>
+<!-- ===== AMBEDO FIESTA ===== -->
+<section id="ambedo">
+<div class="shead">
+<p class="eyebrow" data-en="Event project" data-vi="Dự án sự kiện">Event project</p>
+<h3 data-en="Ambedo Fiesta Season 2 – Summer Vibes" data-vi="Ambedo Fiesta Mùa 2 – Summer Vibes">Ambedo Fiesta Season 2 – Summer Vibes</h3>
+<p class="meta">
+<span class="rolename">Event Content &amp; Operations</span>
+<span class="when" data-en="Hanoi" data-vi="Hà Nội">Hanoi</span>
+</p>
+</div>
+<div class="mrow">
+<div class="mcell">
+<p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;a1&quot;&gt;2,000–3,000&lt;/span&gt; guests" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;a1&quot;&gt;2.000–3.000&lt;/span&gt; khách"><span class="ed" data-k="a1">2,000–3,000</span> guests</p>
+<p class="l" data-en="Estimated attendance across the day" data-vi="Quy mô khách tham dự ước tính trong ngày">Estimated attendance across the day</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;a2&quot;&gt;77&lt;/span&gt; booths" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;a2&quot;&gt;77&lt;/span&gt; gian hàng"><span class="ed" data-k="a2">77</span> booths</p>
+<p class="l" data-en="An Art Market gathering young artists and creators" data-vi="Art Market quy tụ các họa sĩ và nhà sáng tạo trẻ">An Art Market gathering young artists and creators</p>
+</div>
+</div>
+<ul class="pts">
+<li data-en="A culture and creativity festival for the ACG, cosplay, gaming and underground communities, held in Hanoi with a full programme of stage, experience and retail activities." data-vi="Lễ hội văn hóa–sáng tạo dành cho cộng đồng ACG, cosplay, gaming và underground; tổ chức tại Hà Nội với chuỗi hoạt động sân khấu, trải nghiệm và thương mại.">A culture and creativity festival for the ACG, cosplay, gaming and underground communities, held in Hanoi with a full programme of stage, experience and retail activities.</li>
+<li data-en="Featuring &lt;strong&gt;&lt;span class=&quot;ed&quot; data-k=&quot;a3&quot;&gt;11&lt;/span&gt; Yosakoi teams&lt;/strong&gt;, international guests and a Hip-hop Dance Battle with a &lt;strong&gt;&lt;span class=&quot;ed&quot; data-k=&quot;a4&quot;&gt;25&lt;/span&gt;m VND&lt;/strong&gt; prize pool, alongside a Cosplay Catwalk, Lolita Fashion Show, Fandom Hub and creative workshops." data-vi="Có &lt;strong&gt;&lt;span class=&quot;ed&quot; data-k=&quot;a3&quot;&gt;11&lt;/span&gt; đội Yosakoi&lt;/strong&gt;, khách mời quốc tế, Hip-hop Dance Battle với tổng giải thưởng &lt;strong&gt;&lt;span class=&quot;ed&quot; data-k=&quot;a4&quot;&gt;25&lt;/span&gt; triệu đồng&lt;/strong&gt;, cùng các hoạt động Cosplay Catwalk, Lolita Fashion Show, Fandom Hub và workshop sáng tạo.">Featuring <strong><span class="ed" data-k="a3">11</span> Yosakoi teams</strong>, international guests and a Hip-hop Dance Battle with a <strong><span class="ed" data-k="a4">25</span>m VND</strong> prize pool, alongside a Cosplay Catwalk, Lolita Fashion Show, Fandom Hub and creative workshops.</li>
+<li data-en="Helped build the programme content, wrote MC scripts, developed promotional video concepts for partners and coordinated operations on event day." data-vi="Tham gia xây dựng nội dung chương trình, viết kịch bản MC, lên ý tưởng video truyền thông cho đối tác và phối hợp vận hành chương trình trong ngày diễn ra sự kiện.">Helped build the programme content, wrote MC scripts, developed promotional video concepts for partners and coordinated operations on event day.</li>
+</ul>
+<div class="videocard">
+<a class="vthumb" href="https://www.facebook.com/share/v/19ogGX318Q/" rel="noopener" target="_blank">
+<img alt="Hình ảnh tại sự kiện Ambedo Fiesta Mùa 2" loading="lazy" src="img-19.jpg">
+<span aria-hidden="true" class="playbtn">▶</span>
+</a>
+<div class="vmeta">
+<p class="vtitle" data-en="Event recap video" data-vi="Video recap sự kiện">Event recap video</p>
+<p class="vdesc" data-en="A full day at Ambedo Fiesta Season 2 — the stage, the Art Market and the community activities." data-vi="Toàn cảnh một ngày diễn ra Ambedo Fiesta Mùa 2 — sân khấu, Art Market và các hoạt động cộng đồng.">A full day at Ambedo Fiesta Season 2 — the stage, the Art Market and the community activities.</p>
+<a class="vbtn" data-en="▶ Watch recap" href="https://www.facebook.com/share/v/19ogGX318Q/" rel="noopener" target="_blank" data-vi="▶ Xem video recap">▶ Watch recap</a>
+</div>
+</div>
+</section>
+<!-- ===== TOOLS ===== -->
+<section id="cong-cu">
+<div class="shead">
+<p class="eyebrow" data-en="Tools &amp;amp; development" data-vi="Công cụ &amp;amp; phát triển">Tools &amp; development</p>
+<h3 data-en="Tools &amp;amp; Learning" data-vi="Công cụ &amp;amp; học tập">Tools &amp; Learning</h3>
+</div>
+<div class="toolgrid">
+<div class="tool"><span class="ico"><img alt="" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23E03A41%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M16%2019v-1a4%204%200%200%200-4-4H6a4%204%200%200%200-4%204v1%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%227%22%20r%3D%223%22%2F%3E%3Cpath%20d%3D%22M18%208h4M20%206v4%22%2F%3E%3C%2Fsvg%3E"></span><span class="nm">Getfly CRM</span></div>
+<div class="tool"><span class="ico"><img alt="" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23E03A41%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M12%203v3M12%2018v3M4.2%207.5l2.6%201.5M17.2%2015l2.6%201.5M4.2%2016.5l2.6-1.5M17.2%209l2.6-1.5%22%2F%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%223.4%22%2F%3E%3C%2Fsvg%3E"></span><span class="nm">Claude</span></div>
+<div class="tool"><span class="ico"><img alt="" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23E03A41%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M20%2014a3%203%200%200%201-3%203H9l-5%204V6a3%203%200%200%201%203-3h10a3%203%200%200%201%203%203z%22%2F%3E%3Cpath%20d%3D%22M8.5%2010h7M8.5%2013.2h4.5%22%2F%3E%3C%2Fsvg%3E"></span><span class="nm">ChatGPT</span></div>
+<div class="tool"><span class="ico"><img alt="" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23E03A41%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3%205l11%2011M3%2019L14%208%22%2F%3E%3Ccircle%20cx%3D%2217.5%22%20cy%3D%2217.5%22%20r%3D%222.5%22%2F%3E%3Ccircle%20cx%3D%2217.5%22%20cy%3D%226.5%22%20r%3D%222.5%22%2F%3E%3C%2Fsvg%3E"></span><span class="nm">CapCut</span></div>
+<div class="tool"><span class="ico"><img alt="" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23E03A41%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M3%2020h18%22%2F%3E%3Cpath%20d%3D%22M6%2020v-5M11%2020v-9M16%2020v-6M21%2020V7%22%2F%3E%3C%2Fsvg%3E"></span><span class="nm">Google Ads</span></div>
+<div class="tool"><span class="ico"><img alt="" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23E03A41%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M4%2010v4a1%201%200%200%200%201%201h2l5%204V5L7%209H5a1%201%200%200%200-1%201z%22%2F%3E%3Cpath%20d%3D%22M17%208.5a5%205%200%200%201%200%207%22%2F%3E%3Cpath%20d%3D%22M19.6%206a8%208%200%200%201%200%2012%22%2F%3E%3C%2Fsvg%3E"></span><span class="nm">Facebook Ads</span></div>
+<div class="tool"><span class="ico"><img alt="" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23E03A41%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M15.5%204.5l4%204L8%2020H4v-4z%22%2F%3E%3Cpath%20d%3D%22M13.5%206.5l4%204%22%2F%3E%3Cpath%20d%3D%22M4%204.5l.8%201.7L6.5%207l-1.7.8L4%209.5l-.8-1.7L1.5%207l1.7-.8z%22%2F%3E%3C%2Fsvg%3E"></span><span class="nm">AIKTP</span></div>
+<div class="tool"><span class="ico"><img alt="" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23E03A41%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.2%22%2F%3E%3Crect%20x%3D%2214%22%20y%3D%2216%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.2%22%2F%3E%3Crect%20x%3D%223%22%20y%3D%2216%22%20width%3D%227%22%20height%3D%225%22%20rx%3D%221.2%22%2F%3E%3Cpath%20d%3D%22M6.5%208v8M10%2018.5h4M17.5%2016v-3.5H6.5%22%2F%3E%3C%2Fsvg%3E"></span><span class="nm">Google Flow</span></div>
+<div class="tool"><span class="ico"><img alt="" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23E03A41%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%222.5%22%20y%3D%224%22%20width%3D%2219%22%20height%3D%2216%22%20rx%3D%222.2%22%2F%3E%3Cpath%20d%3D%22M2.5%208.5h19%22%2F%3E%3Ccircle%20cx%3D%225.8%22%20cy%3D%226.2%22%20r%3D%22.6%22%20fill%3D%22%23E03A41%22%2F%3E%3Ccircle%20cx%3D%228%22%20cy%3D%226.2%22%20r%3D%22.6%22%20fill%3D%22%23E03A41%22%2F%3E%3Cpath%20d%3D%22M7%2012.5h10M7%2016h6%22%2F%3E%3C%2Fsvg%3E"></span><span class="nm">WordPress</span></div>
+<div class="tool"><span class="ico"><img alt="" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23E03A41%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%223.5%22%20width%3D%2218%22%20height%3D%2217%22%20rx%3D%222%22%2F%3E%3Cpath%20d%3D%22M3%209h18M3%2015h18M9.5%203.5v17M15%203.5v17%22%2F%3E%3C%2Fsvg%3E"></span><span class="nm">Google Sheets</span></div>
+<div class="tool"><span class="ico"><img alt="" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23E03A41%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Ccircle%20cx%3D%2210.5%22%20cy%3D%2210.5%22%20r%3D%226.5%22%2F%3E%3Cpath%20d%3D%22M15.3%2015.3L21%2021%22%2F%3E%3Cpath%20d%3D%22M8%2012v-2M10.5%2012V8.5M13%2012v-3%22%2F%3E%3C%2Fsvg%3E"></span><span class="nm">Google Search Console</span></div>
+</div>
+<ul class="pts" style="margin-top:22px">
+<li data-en="Coursera courses in English Writing Skills and applied business writing." data-vi="Các khóa học Coursera về English Writing Skills và kỹ năng viết tiếng Anh ứng dụng.">Coursera courses in English Writing Skills and applied business writing.</li>
+<li data-en="Applying English across SEO content, AI video scripts, project documentation and professional communication." data-vi="Ứng dụng tiếng Anh trong SEO content, kịch bản video AI, tài liệu dự án và giao tiếp chuyên môn.">Applying English across SEO content, AI video scripts, project documentation and professional communication.</li>
+</ul>
+</section>
+<!-- ===== CONTACT ===== -->
+<section id="lien-he" style="padding-top:0">
+<div class="cta">
+<p class="eyebrow">Liên hệ</p>
+<h3 data-en="Get in touch:" data-vi="Trao đổi thêm thông tin tại:">Get in touch:</h3>
+<div class="links">
+<a href="tel:0945006669">0945 006 669</a>
+<a href="mailto:hanhlh2fs@gmail.com">hanhlh2fs@gmail.com</a>
+<a href="https://www.linkedin.com/in/hanhlh2/" rel="noopener" target="_blank">LinkedIn</a>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div><dialog id="lb" aria-label="Xem ảnh minh chứng">
+  <button id="lbclose" type="button">Đóng ✕</button>
+  <img id="lbimg" alt="">
+  <p class="cap" id="lbcap"></p>
+</dialog><dialog id="pdfview" aria-label="Xem kịch bản">
+  <div class="pdfbar">
+    <span class="pdfttl" id="pdfttl">Kịch bản</span>
+    <span class="pdfacts">
+      <button type="button" id="pdfclose">Đóng ✕</button>
+    </span>
+  </div>
+  <div class="pdftext" id="pdftext">
+<div>
+<h5>NEO GIẢI MÃ #03 — Vì sao lốp xe màu đen?</h5>
+<p><b>Thời lượng:</b> 30–60 giây &nbsp;·&nbsp; <b>Định dạng:</b> 9:16 dọc (TikTok/Reels) &nbsp;·&nbsp; <b>Kết cấu:</b> 5 clip × 8 giây, chuyển cảnh cắt nhanh 0,5 giây.</p>
+
+<h5>Cảnh 1 — Hook mở đầu</h5>
+<p>Vinachem Neo xuất hiện trong phòng thí nghiệm tương lai màu xanh dương. Phía sau là hai chiếc lốp ô tô, một trắng một đen, xoay chậm trong không trung. Camera dolly-in từ xa đến cận mặt Neo.</p>
+<p class="line">“Bạn có bao giờ thắc mắc… tại sao hầu hết lốp xe trên thế giới đều màu đen? Chẳng phải cao su tự nhiên có màu trắng ngà sao?”</p>
+<p><b>Mood:</b> Tò mò, gây bất ngờ &nbsp;·&nbsp; <b>SFX:</b> Whoosh + Digital Rise</p>
+
+<h5>Cảnh 2 — Giải thích khoa học</h5>
+<p>Minh họa AI trực quan bằng đồ họa 3D xen hình thật. Input thật: hình ảnh lốp của DRC, CSM hoặc cao su Sao Vàng / nhà máy.</p>
+<p class="line">“Thực tế, màu đen không phải màu tự nhiên của cao su. Trong quá trình sản xuất, các nhà sản xuất bổ sung Carbon Black — hay còn gọi là muội than. Đây là một loại vật liệu giúp lốp chịu mài mòn tốt hơn, tản nhiệt hiệu quả hơn và chống tác động của tia UV. Nhờ đó, tuổi thọ của lốp có thể tăng lên gấp nhiều lần so với cao su nguyên chất.”</p>
+<p><b>Mood:</b> Khoa học, gần gũi &nbsp;·&nbsp; <b>SFX:</b> Digital UI</p>
+
+<h5>Cảnh 3 — CTA + Logo</h5>
+<p>Neo nhìn vào camera, logo xuất hiện.</p>
+<p class="line">“Tôi là Vinachem Neo, hãy ấn theo dõi để cùng tìm hiểu những thú vị của ngành hóa nhé!”</p>
+<p><b>Mood:</b> Tự tin &nbsp;·&nbsp; <b>SFX:</b> Logo sting</p>
+
+<h5>Khóa nhất quán — dán vào đầu mỗi prompt</h5>
+<p><b>Khóa nhân vật:</b> dùng ảnh tham chiếu làm nhân vật chính duy nhất “Vinachem Neo”; không thay đổi khuôn mặt, kiểu tóc, trang phục, tỉ lệ cơ thể ở mọi cảnh.</p>
+<p><b>Khóa giọng nói:</b> tiếng Việt, giọng nam miền Bắc, ấm, rõ, tông trung trầm, phong cách người dẫn khoa học thân thiện, đồng nhất ở tất cả clip; khớp khẩu hình với lời thoại.</p>
+<p><b>Khóa bối cảnh:</b> phòng thí nghiệm tương lai tông xanh dương đậm, màn hình hologram phát sáng trôi lơ lửng phía sau, ánh viền cyan dịu, phong cách hoạt hình 3D điện ảnh, video dọc 9:16.</p>
+
+<h5>Clip 1 — Hook mở đầu (8 giây)</h5>
+<p><b>0–1,5s</b> — Toàn cảnh 24mm, camera tĩnh: phòng lab xanh hiện dần cùng SFX whoosh + digital rise. Neo đứng giữa, hologram phát sáng phía sau.</p>
+<p><b>1,5–3s</b> — Sau lưng Neo, hai chiếc lốp hiện ra xoay chậm; rack focus lần lượt sang lốp trắng ngà bên trái rồi lốp đen bên phải, mỗi lốp 0,7 giây.</p>
+<p><b>3–7,5s</b> — Camera dolly-in chậm đến cận ngực, DOF thu hẹp dần, focus khóa vào khuôn mặt Neo nhướn mày cười tò mò; hai lốp mờ thành bokeh hai bên vai. Tay Neo chỉ về hai chiếc lốp đúng nhịp câu hỏi.</p>
+<p><b>7,5–8s</b> — Giữ cận mặt Neo với ánh mắt tò mò, camera dừng, chừa 0,5 giây chuyển cảnh.</p>
+
+<h5>Clip 2 — Màu đen không tự nhiên (8 giây)</h5>
+<p><b>0–1s</b> — Trung cảnh, Neo lệch trái khung, camera tĩnh, focus vào mặt Neo khi bắt đầu nói.</p>
+<p><b>1–2,5s</b> — Bảng hologram bên phải chiếu ảnh thật: mủ cao su trắng chảy vào bát gỗ trên thân cây. Camera pan nhẹ sang phải, rack focus từ Neo sang hologram, focus cận vào dòng mủ trắng đang nhỏ giọt.</p>
+<p><b>2,5–5,5s</b> — Hologram biến hình thành trống trộn cao su trên dây chuyền; dòng bột đen mịn Carbon Black đổ vào. Camera push-in, focus bám theo dòng bột đen rơi, hạt bột li ti sắc nét.</p>
+<p><b>5,5–7s</b> — Khối cao su chuyển từ trắng ngà sang đen tuyền, focus giữ trên bề mặt để thấy rõ chuyển màu.</p>
+<p><b>7–8s</b> — Camera lùi nhẹ, rack focus về Neo chỉ tay vào hologram và gật đầu; hologram mờ nền.</p>
+
+<h5>Clip 3 — Công dụng của Carbon Black (8 giây)</h5>
+<p><b>0–1s</b> — Trung cảnh ngang ngực, ống kính 50mm, camera tĩnh; focus vào khuôn mặt Neo đang mỉm cười, xòe lòng bàn tay phải hướng lên.</p>
+<p><b>1–2,5s</b> — Push-in chậm, rack focus từ mặt Neo xuống lòng bàn tay: ba biểu tượng hologram bật sáng lần lượt theo hiệu ứng particle — gai lốp chống mài mòn kèm tia lửa, tản nhiệt sóng xanh, lá chắn UV.</p>
+<p><b>2,5–4,5s</b> — Nhịp “chịu mài mòn tốt hơn”: camera orbit trái ~10°, focus kéo vào biểu tượng gai lốp phóng to nhẹ và xoay; phần còn lại mờ nền.</p>
+<p><b>4,5–6s</b> — Nhịp “tản nhiệt hiệu quả hơn”: orbit tiếp ~10°, focus pull sang biểu tượng thứ hai sáng bừng, hơi nhiệt tỏa ra.</p>
+<p><b>6–7,5s</b> — Nhịp “chống tia UV”: focus pull sang biểu tượng thứ ba, tia nắng vàng bị lá chắn chặn lại lấp lánh.</p>
+<p><b>7,5–8s</b> — Rack focus trở lại mặt Neo gật đầu tự tin, camera dừng, giữ khung để chuyển cảnh.</p>
+<p><b>Ánh sáng:</b> viền cyan dịu trên vai Neo; biểu tượng hologram là nguồn sáng chính khi được focus.</p>
+
+<h5>Clip 4 — Kết luận khoa học (8 giây)</h5>
+<p><b>0–1,5s</b> — Trung cảnh, camera tĩnh; focus vào mặt Neo khi anh giơ tay giới thiệu; sau lưng mở ra hologram so sánh chia đôi.</p>
+<p><b>1,5–3s</b> — Camera truck ngang sang phải kết hợp rack focus vào hologram: bên trái lốp cao su tự nhiên nhạt màu nứt nẻ mòn vẹt, bên phải lốp xe tải đen bền bỉ; focus dừng ở gai lốp đen sắc nét.</p>
+<p><b>3–5s</b> — Nhịp “tuổi thọ tăng gấp nhiều lần”: focus vào biểu đồ cột hologram mọc lên cạnh lốp đen, camera push-in nhẹ vào biểu đồ.</p>
+<p><b>5–7s</b> — Nhịp “toàn bộ lốp xe trên thế giới”: camera pull-back + boom lên cao, DOF mở rộng, hiện hàng lốp đen nối nhau trong hologram — ô tô con, xe tải, xe máy, tất cả sắc nét dần.</p>
+<p><b>7–8s</b> — Rack focus về mặt Neo gật đầu tự tin ở tiền cảnh, hologram mờ nền, giữ khung.</p>
+
+<h5>Clip 5 — CTA + Logo (8 giây)</h5>
+<p><b>0–2s</b> — Cận trung 35mm, camera dolly-in rất chậm; focus khóa vào mắt và nụ cười của Neo nhìn thẳng camera, hậu cảnh lab mờ bokeh.</p>
+<p><b>2–5s</b> — Neo tay chỉ nhẹ lên góc trên, màn hình hiện lên biểu tượng “Theo dõi”; camera tilt lên theo hướng tay ~5°, focus vẫn giữ trên mặt Neo.</p>
+<p><b>5–6,5s</b> — Logo xuất hiện; rack focus từ mặt Neo sang logo, hạt lấp lánh nhẹ quanh logo.</p>
+<p><b>6,5–8s</b> — DOF mở rộng để cả Neo và logo cùng sắc nét, Neo mỉm cười gật nhẹ, camera dừng, giữ khung kết.</p>
+
+<h5>Ghi chú sản xuất</h5>
+<p>Clip 3 đính kèm ảnh Neo. Clip 4 đính kèm ảnh Neo + ảnh lốp đen. Clip 5 đính kèm ảnh Neo + logo Vinachem. Ghép 5 clip theo thứ tự, chuyển cảnh cắt nhanh 0,5 giây.</p>
+</div>
+  </div>
+</dialog>
+<script data-own="core">
+(function(){
+  "use strict";
+  function qsa(s,r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); }
+
+  /* ---------- danh mục con trong sidebar ---------- */
+  function buildSubNav(){
+    qsa("nav .sub").forEach(function(e){ e.remove(); });
+    qsa("nav > ol > li > a").forEach(function(a){
+      var id = (a.getAttribute("href") || "").slice(1);
+      var sec = id && document.getElementById(id);
+      if (!sec) return;
+      var projs = qsa(".proj", sec);
+      if (!projs.length) return;
+
+      var ul = document.createElement("ul");
+      ul.className = "sub";
+      projs.forEach(function(pr, i){
+        if (!pr.id) pr.id = id + "-m" + (i + 1);
+        var h = pr.querySelector("h4");
+        if (!h) return;
+        var c = h.cloneNode(true);
+        qsa(".tag", c).forEach(function(x){ x.remove(); });
+        var name = (c.textContent || "").replace(/\s+/g, " ").trim();
+        if (!name) return;
+        var li = document.createElement("li");
+        var link = document.createElement("a");
+        link.setAttribute("href", "#" + pr.id);
+        link.textContent = name;
+        li.appendChild(link);
+        ul.appendChild(li);
+      });
+      if (ul.children.length) a.parentNode.appendChild(ul);
+    });
+  }
+  window.__rebuildNav = buildSubNav;
+  buildSubNav();
+
+  /* ---------- đánh dấu mục đang xem ---------- */
+  function pick(){
+    var tops = qsa("nav > ol > li > a");
+    var best = null;
+    tops.forEach(function(a){
+      var s = document.querySelector(a.getAttribute("href"));
+      if (s && s.getBoundingClientRect().top <= 170) best = s.id;
+    });
+    best = best || "gioi-thieu";
+    tops.forEach(function(a){
+      var on = a.getAttribute("href") === "#" + best;
+      a.classList.toggle("on", on);
+      if (a.parentNode && a.parentNode.tagName === "LI") a.parentNode.classList.toggle("open", on);
+    });
+
+    var sub = null;
+    qsa(".proj[id]").forEach(function(pr){
+      if (pr.getBoundingClientRect().top <= 200) sub = pr.id;
+    });
+    qsa("nav .sub a").forEach(function(a){
+      a.classList.toggle("on", !!sub && a.getAttribute("href") === "#" + sub);
+    });
+  }
+
+  var tick = false;
+  window.addEventListener("scroll", function(){
+    if (tick) return;
+    tick = true;
+    window.requestAnimationFrame(function(){ pick(); tick = false; });
+  }, {passive:true});
+  window.addEventListener("resize", pick);
+  pick();
+
+  /* ---------- xem ảnh phóng to ---------- */
+  var lb = document.getElementById("lb");
+  var opener = null;
+
+  function openLb(btn){
+    var img = btn.querySelector("img"); if (!img) return;
+    var i = document.getElementById("lbimg"), c = document.getElementById("lbcap");
+    i.src = img.currentSrc || img.src;
+    i.alt = img.alt || "";
+    c.textContent = btn.getAttribute("data-cap") || img.alt || "";
+    opener = btn;
+    if (typeof lb.showModal === "function") lb.showModal();
+  }
+  function closeLb(){
+    if (lb.open) lb.close();
+    if (opener){ opener.focus(); opener = null; }
+  }
+
+  /* ---------- chuyển ngôn ngữ ---------- */
+  var TITLES = {vi:"Hồ sơ Lê Hồng Hạnh", en:"Le Hong Hanh Portfolio"};
+  function setLang(lang){
+    qsa("[data-en]").forEach(function(el){
+      if (!el.hasAttribute("data-vi")) el.setAttribute("data-vi", el.innerHTML);
+      var v = lang === "en" ? el.getAttribute("data-en") : el.getAttribute("data-vi");
+      if (typeof v === "string") el.innerHTML = v;
+    });
+    document.documentElement.lang = lang;
+    document.title = TITLES[lang] || TITLES.vi;
+    qsa(".langsw button").forEach(function(b){
+      b.classList.toggle("on", b.getAttribute("data-lang") === lang);
+    });
+    if (window.__rebuildNav) window.__rebuildNav();
+  }
+  document.addEventListener("click", function(ev){
+    var lb2 = ev.target.closest && ev.target.closest(".langsw button");
+    if (lb2) setLang(lb2.getAttribute("data-lang"));
+  });
+
+  /* ---------- cửa sổ đọc kịch bản ---------- */
+  var pv = document.getElementById("pdfview");
+  function openScript(btn){
+    if (!pv) return;
+    var ttl = document.getElementById("pdfttl");
+    if (ttl) ttl.textContent = btn.getAttribute("data-pdftitle") || "Kịch bản";
+    if (typeof pv.showModal === "function") pv.showModal();
+  }
+  function closeScript(){ if (pv && pv.open) pv.close(); }
+  if (pv) pv.addEventListener("cancel", function(){ closeScript(); });
+
+  document.addEventListener("click", function(ev){
+    var pb = ev.target.closest && ev.target.closest("[data-openscript]");
+    if (pb){ ev.preventDefault(); openScript(pb); return; }
+    if (ev.target.closest && ev.target.closest("#pdfclose")){ closeScript(); return; }
+    if (document.body.classList.contains("editing")) return;
+    if (ev.target.closest("#lbclose")){ closeLb(); return; }
+    if (ev.target === lb){ closeLb(); return; }
+    var fb = ev.target.closest("figure > button");
+    if (fb) openLb(fb);
+  });
+  lb.addEventListener("cancel", function(){ closeLb(); });
+})();
+</script>
+</body>
+</html>
