@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Hồ sơ năng lực Lê Hồng Hạnh — Digital Marketing &amp; Marketing Operations">
+<meta name="description" content="Hồ sơ năng lực Lê Hồng Hạnh — Admissions Growth &amp; Operations | Project Manager">
 <title>Le Hong Hanh Portfolio</title>
 <link data-own="" rel="preconnect" href="https://fonts.googleapis.com">
 <link data-own="" rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -584,6 +584,37 @@ body.editing figure img{cursor:move}
   figure{break-inside:avoid}
   .wrap{padding-block:16px 0}
 }
+
+/* ---------- bổ sung định vị tuyển sinh ---------- */
+.branches{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
+.branch{display:block;border:1px solid var(--line);border-top:3px solid var(--red);background:var(--surface);padding:14px 16px 15px;color:var(--ink-2)}
+.branch:hover{border-color:var(--red)}
+.branch .no{font-family:var(--mono);font-size:calc((10px) * var(--fs,1));letter-spacing:.12em;color:var(--red)}
+.branch b{display:block;font-family:var(--disp);font-size:calc((15.5px) * var(--fs,1));color:var(--ink);margin-top:6px;line-height:1.25}
+.branch .d{display:block;font-size:calc((12.5px) * var(--fs,1));color:var(--muted);margin-top:6px;line-height:1.45}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:8px;margin:16px 0 0;padding:0;list-style:none}
+.flow li{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--red);padding:9px 10px 10px;font-size:calc((13px) * var(--fs,1));color:var(--ink);font-weight:500;line-height:1.3}
+.flow li i{display:block;font-style:normal;font-family:var(--mono);font-size:calc((9.5px) * var(--fs,1));letter-spacing:.1em;color:var(--red);margin-bottom:4px}
+.subhead{margin-top:clamp(36px,5vw,56px);padding-top:18px;border-top:1px solid var(--line)}
+.subhead h4{font-size:calc((19px) * var(--fs,1));font-weight:700;margin-top:6px}
+.subhead p.sd{color:var(--muted);font-size:calc((14px) * var(--fs,1));margin-top:6px;max-width:66ch}
+.awards.three{grid-template-columns:repeat(3,1fr)}
+@media (max-width:860px){.awards.three{grid-template-columns:1fr}.branches{grid-template-columns:1fr}}
+/* 5 ô chỉ số: hàng 1 = 3 ô (Swinburne), hàng 2 = 2 ô (FPT School) */
+.stats.five{grid-template-columns:repeat(6,1fr)}
+.stats.five .stat{grid-column:span 2}
+.stats.five .stat:nth-child(n+4){grid-column:span 3;border-top:1px solid var(--line)}
+.stats.five .stat:nth-child(4){border-left:0}
+@media (max-width:920px){
+  .stats.five{grid-template-columns:repeat(2,1fr)}
+  .stats.five .stat,.stats.five .stat:nth-child(n+4){grid-column:auto}
+  .stats.five .stat:nth-child(4){border-left:1px solid var(--line)}
+  .stats.five .stat:nth-child(5){grid-column:1/-1;border-left:0}
+}
+@media (max-width:470px){
+  .stats.five{grid-template-columns:1fr}
+  .stats.five .stat:nth-child(n){grid-column:auto;border-left:0}
+}
 </style>
 <style id="themeStyle" data-own="theme">:root{--disp:"Bricolage Grotesque","Be Vietnam Pro",-apple-system,"Segoe UI",sans-serif;--sans:"Be Vietnam Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--fs:1;--rail:288px;--red:#D91F27;--red-deep:hsl(357,75%,37%);--red-soft:hsl(357,75%,71%);--wash:hsl(357,70%,96%);}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--red:hsl(357,75%,58%);--red-deep:hsl(357,70%,70%);--red-soft:hsl(357,75%,72%);--wash:hsl(357,22%,14%);}}
@@ -601,7 +632,7 @@ body.editing figure img{cursor:move}
 <div class="txt">
 <p class="eyebrow" data-en="Professional Portfolio" data-vi="Hồ sơ năng lực">Professional Portfolio</p>
 <h1>Lê Hồng Hạnh</h1>
-<p class="role">Digital Marketing &amp;<br>Marketing Operations</p>
+<p class="role" data-en="Admissions Growth &amp;amp; Operations &lt;span style=&quot;white-space:nowrap&quot;&gt;| Project Manager&lt;/span&gt;" data-vi="Tuyển sinh, Vận hành tăng trưởng &amp;amp; Quản lý dự án">Admissions Growth &amp; Operations <span style="white-space:nowrap">| Project Manager</span></p>
 </div>
 </div>
 <div class="contacts">
@@ -614,10 +645,11 @@ body.editing figure img{cursor:move}
 <ol>
 <li class="open"><a data-en="About" href="#gioi-thieu" class="on" data-vi="Giới thiệu">About</a></li>
 <li class=""><a data-en="Core Expertise" href="#nang-luc" data-vi="Năng lực chuyên môn" class="">Core Expertise</a></li>
-<li class=""><a href="#fpt-schools" class="">FPT Schools<span class="yr">2026</span></a><ul class="sub"><li><a href="#fpt-schools-m1">Paid Media for Admissions</a></li><li><a href="#fpt-schools-m2">SEO Content Project</a></li><li><a href="#fpt-schools-m3">CRM &amp; Lead Lifecycle Optimization</a></li><li><a href="#fpt-schools-m4">Fwork — AI-enabled Internal Work Management Platform</a></li></ul></li>
-<li class=""><a href="#clickstar" class="">ClickStar<span class="yr">2026</span></a><ul class="sub"><li><a href="#clickstar-m1">H’Pilates</a></li><li><a href="#clickstar-m2">MT Collection Hotels</a></li><li><a href="#clickstar-m3">SFP Accounting</a></li><li><a href="#clickstar-m4">Le Thao Corporate Gifts</a></li><li><a href="#clickstar-m5">2Tech Technology</a></li><li><a href="#clickstar-m6">Vinachem</a></li></ul></li>
+<li class=""><a href="#fpt-schools" class="">FPT School — HO<span class="yr">2026</span></a></li>
+<li class=""><a href="#clickstar" class="">ClickStar<span class="yr">2026</span></a></li>
 <li class=""><a href="#swinburne" class="">Swinburne Vietnam<span class="yr">2023–26</span></a></li>
 <li class=""><a data-en="FPT University&lt;span class=&quot;yr&quot;&gt;2019–23&lt;/span&gt;" href="#dai-hoc-fpt" data-vi="Đại học FPT&lt;span class=&quot;yr&quot;&gt;2019–23&lt;/span&gt;" class="">FPT University<span class="yr">2019–23</span></a></li>
+<li class=""><a data-en="Awards &amp;amp; Languages" href="#giai-thuong" data-vi="Giải thưởng &amp;amp; Ngoại ngữ" class="">Awards &amp; Languages</a></li>
 <li class=""><a data-en="Ambedo Fiesta&lt;span class=&quot;yr&quot;&gt;Event&lt;/span&gt;" href="#ambedo" data-vi="Ambedo Fiesta&lt;span class=&quot;yr&quot;&gt;Sự kiện&lt;/span&gt;" class="">Ambedo Fiesta<span class="yr">Event</span></a></li>
 <li class=""><a data-en="Tools &amp;amp; Learning" href="#cong-cu" data-vi="Công cụ &amp;amp; học tập" class="">Tools &amp; Learning</a></li>
 <li><a data-en="Contact" href="#lien-he" data-vi="Liên hệ">Contact</a></li>
@@ -633,29 +665,33 @@ body.editing figure img{cursor:move}
 <div>
 <p class="eyebrow" data-en="About" data-vi="Giới thiệu">About</p>
 <h2 data-en="Taking products from &lt;em&gt;insight&lt;/em&gt; to &lt;em&gt;revenue&lt;/em&gt;." data-vi="Đưa sản phẩm từ &lt;em&gt;insight&lt;/em&gt; đến &lt;em&gt;doanh số&lt;/em&gt;.">Taking products from <em>insight</em> to <em>revenue</em>.</h2>
-<p class="lede" data-en="Understanding the full product-selling lifecycle lets me run Digital Marketing end-to-end — from market and customer research, strategy, content development and Paid Media/SEO/CRM operations, through to consulting and closing the sale myself." data-vi="Hiểu toàn bộ vòng đời bán sản phẩm giúp tôi triển khai Digital Marketing theo hướng end-to-end, từ nghiên cứu thị trường và khách hàng, xây dựng chiến lược, phát triển nội dung, vận hành Paid Media/SEO/CRM đến trực tiếp tư vấn và chốt sale.">Understanding the full product-selling lifecycle lets me run Digital Marketing end-to-end — from market and customer research, strategy, content development and Paid Media/SEO/CRM operations, through to consulting and closing the sale myself.</p>
-<p class="lede" data-en="Selling directly and earning Best Sale of the Year showed me exactly how insight, messaging, lead quality and conversion rate connect. So I optimise not only marketing metrics but the customer journey that actually generates revenue." data-vi="Trực tiếp bán hàng và đạt danh hiệu Best Sale of the Year giúp tôi nhìn rõ mối liên kết giữa insight, thông điệp, lead quality và tỷ lệ chuyển đổi. Nhờ đó, tôi không chỉ tối ưu các chỉ số marketing mà còn tập trung xây dựng hành trình khách hàng có khả năng tạo doanh thu thực tế.">Selling directly and earning Best Sale of the Year showed me exactly how insight, messaging, lead quality and conversion rate connect. So I optimise not only marketing metrics but the customer journey that actually generates revenue.</p>
+<p class="lede" data-en="I connect admissions marketing, lead quality, CRM operations and direct consultation into one end-to-end recruitment journey — from parent insight and lead generation to application, scholarship, enrolment and referral." data-vi="Kinh nghiệm trực tiếp triển khai Marketing tuyển sinh và tư vấn tuyển sinh tại cả mô hình trường liên cấp và bậc đại học. Tôi kết nối insight phụ huynh, tạo lead, đánh giá chất lượng lead, tư vấn, chăm sóc, xét tuyển/học bổng và nhập học thành một quy trình tuyển sinh xuyên suốt.">I connect admissions marketing, lead quality, CRM operations and direct consultation into one end-to-end recruitment journey — from parent insight and lead generation to application, scholarship, enrolment and referral.</p>
+<p class="lede" data-en="Best Sales 2024–2025 at Swinburne Vietnam; today coordinating and tracking admissions marketing across 18 FPT School campuses. I work the whole funnel, not a single metric." data-vi="Danh hiệu Best Sales năm học 2024–2025 tại Swinburne Vietnam; hiện phối hợp và theo dõi Marketing tuyển sinh tại 18 cơ sở FPT School. Tôi vận hành toàn bộ funnel, không chỉ tối ưu một chỉ số riêng lẻ.">Best Sales 2024–2025 at Swinburne Vietnam; today coordinating and tracking admissions marketing across 18 FPT School campuses. I work the whole funnel, not a single metric.</p>
 </div>
 <div class="portrait">
 <img alt="Lê Hồng Hạnh" src="img-02.png">
 </div>
 </div>
-<div class="stats">
+<div class="stats five">
 <div class="stat">
-<p class="n"><span class="ed" data-k="s1">7</span> <small data-en="B VND/year" data-vi="tỷ VNĐ/năm">B VND/year</small></p>
-<p class="l" data-en="Directly managing and optimising the Digital Marketing budget across &lt;span class=&quot;ed&quot; data-k=&quot;s1b&quot;&gt;18&lt;/span&gt; FPT Schools campuses" data-vi="Trực tiếp quản lý và tối ưu ngân sách Digital Marketing cho hệ thống &lt;span class=&quot;ed&quot; data-k=&quot;s1b&quot;&gt;18&lt;/span&gt; cơ sở FPT Schools">Directly managing and optimising the Digital Marketing budget across <span class="ed" data-k="s1b">18</span> FPT Schools campuses</p>
+<p class="n"><span data-en="185" data-vi="185">185</span><small data-en="% of KPI" data-vi="% KPI">% of KPI</small></p>
+<p class="l" data-en="Admissions result at Swinburne Vietnam" data-vi="Kết quả tuyển sinh tại Swinburne Vietnam">Admissions result at Swinburne Vietnam</p>
 </div>
 <div class="stat">
-<p class="n"><span class="ed" data-k="s2">250</span> <small data-en="M VND/month" data-vi="triệu/tháng">M VND/month</small></p>
-<p class="l" data-en="Meta Ads budget under direct management for &lt;span class=&quot;ed&quot; data-k=&quot;s2b&quot;&gt;9&lt;/span&gt; H’Pilates studios" data-vi="Ngân sách Meta Ads đang trực tiếp quản lý cho &lt;span class=&quot;ed&quot; data-k=&quot;s2b&quot;&gt;9&lt;/span&gt; cơ sở H’Pilates">Meta Ads budget under direct management for <span class="ed" data-k="s2b">9</span> H’Pilates studios</p>
+<p class="n"><span data-en="8,000+" data-vi="8.000+">8,000+</span> <small data-en="leads" data-vi="lead">leads</small></p>
+<p class="l" data-en="Leads directly contacted, advised and followed through the admissions process" data-vi="Lead trực tiếp liên hệ, tư vấn và theo sát trong quá trình tuyển sinh">Leads directly contacted, advised and followed through the admissions process</p>
 </div>
 <div class="stat">
-<p class="n"><span class="ed" data-en="1,000" data-k="s3" data-vi="1.000">1,000</span> <small data-en="SEO articles" data-vi="bài SEO">SEO articles</small></p>
-<p class="l" data-en="Producing and optimising &lt;span class=&quot;ed&quot; data-k=&quot;s3c&quot;&gt;1,000&lt;/span&gt; SEO articles for the &lt;span class=&quot;ed&quot; data-k=&quot;s3b&quot;&gt;2027–2028&lt;/span&gt; admissions strategy" data-vi="Triển khai và tối ưu &lt;span class=&quot;ed&quot; data-k=&quot;s3c&quot;&gt;1.000&lt;/span&gt; bài viết SEO, phục vụ chiến lược tuyển sinh năm học &lt;span class=&quot;ed&quot; data-k=&quot;s3b&quot;&gt;2027–2028&lt;/span&gt;">Producing and optimising <span class="ed" data-k="s3c">1,000</span> SEO articles for the <span class="ed" data-k="s3b">2027–2028</span> admissions strategy</p>
+<p class="n"><span data-en="100+" data-vi="100+">100+</span> <small data-en="high schools" data-vi="trường THPT">high schools</small></p>
+<p class="l" data-en="Working with teachers at 100+ high schools on admissions programmes and career guidance" data-vi="Làm việc với thầy cô ở hơn 100 trường THPT về chương trình tuyển sinh, hướng nghiệp">Working with teachers at 100+ high schools on admissions programmes and career guidance</p>
 </div>
 <div class="stat">
-<p class="n"><span class="ed" data-k="s4">185</span><small data-en="% of KPI" data-vi="% KPI">% of KPI</small></p>
-<p class="l" data-en="Admissions result for the &lt;span class=&quot;ed&quot; data-k=&quot;s4b&quot;&gt;2024–2025&lt;/span&gt; academic year at Swinburne Vietnam" data-vi="Kết quả tuyển sinh năm học &lt;span class=&quot;ed&quot; data-k=&quot;s4b&quot;&gt;2024–2025&lt;/span&gt; tại Swinburne Vietnam">Admissions result for the <span class="ed" data-k="s4b">2024–2025</span> academic year at Swinburne Vietnam</p>
+<p class="n"><span data-en="1,000+" data-vi="1.000+">1,000+</span> <small data-en="SEO articles" data-vi="bài SEO">SEO articles</small></p>
+<p class="l" data-en="SEO articles delivered for the 2027–2028 academic year" data-vi="Bài SEO đã triển khai phục vụ cho năm học 2027–2028">SEO articles delivered for the 2027–2028 academic year</p>
+</div>
+<div class="stat">
+<p class="n"><span data-en="18" data-vi="18">18</span> <small data-en="campuses nationwide" data-vi="cơ sở toàn quốc">campuses nationwide</small></p>
+<p class="l" data-en="Scope of admissions-marketing coordination and tracking at FPT School System — Head Office" data-vi="Phạm vi phối hợp và theo dõi Marketing tuyển sinh tại Hệ thống Trường Phổ thông FPT School — Trụ sở chính">Scope of admissions-marketing coordination and tracking at FPT School System — Head Office</p>
 </div>
 </div>
 </section>
@@ -704,15 +740,21 @@ body.editing figure img{cursor:move}
 <section id="fpt-schools">
 <div class="shead">
 <p class="eyebrow" data-en="Experience" data-vi="Kinh nghiệm">Experience</p>
-<h3>FPT Schools</h3>
+<h3 data-en="FPT School System — Head Office" data-vi="Hệ thống Trường Phổ thông FPT School — Trụ sở chính">FPT School System — Head Office</h3>
 <p class="meta">
-<span class="rolename">Marketing Executive / Marketing Operations</span>
+<span class="rolename">Digital Marketing Executive</span>
 <span class="when" data-en="04/2026 – Present" data-vi="04/2026 – Hiện tại">04/2026 – Present</span>
 </p>
 </div>
+<p class="body-copy" data-en="Directly coordinating and tracking admissions marketing for 18 FPT School campuses nationwide. Marketing here serves not only advertising metrics, but lead quality and admissions effectiveness." data-vi="Trực tiếp phối hợp và theo dõi Marketing tuyển sinh cho 18 cơ sở FPT School trên toàn quốc. Marketing không chỉ phục vụ chỉ số quảng cáo mà còn phục vụ chất lượng lead và hiệu quả tuyển sinh.">Directly coordinating and tracking admissions marketing for 18 FPT School campuses nationwide. Marketing here serves not only advertising metrics, but lead quality and admissions effectiveness.</p>
+<div class="branches">
+<a class="branch" href="#fpt-schools-m1"><span class="no">01</span><b data-en="Admissions Paid Media" data-vi="Paid Media tuyển sinh">Admissions Paid Media</b><span class="d" data-en="Meta Ads for lead generation in peak season" data-vi="Meta Ads tạo lead trong mùa cao điểm">Meta Ads for lead generation in peak season</span></a>
+<a class="branch" href="#fpt-schools-m2"><span class="no">02</span><b data-en="Admissions SEO" data-vi="SEO tuyển sinh">Admissions SEO</b><span class="d" data-en="From keyword research to on-page SEO and internal linking" data-vi="Từ keyword research đến on-page SEO và internal linking">From keyword research to on-page SEO and internal linking</span></a>
+<a class="branch" href="#fpt-schools-m3"><span class="no">03</span><b data-en="CRM &amp;amp; Lead Quality" data-vi="CRM &amp;amp; Lead Quality">CRM &amp; Lead Quality</b><span class="d" data-en="Sales follow-up tracking, alerts and a lead-lifecycle dashboard" data-vi="Theo dõi chăm sóc lead của sales, cảnh báo và dashboard lead lifecycle">Sales follow-up tracking, alerts and a lead-lifecycle dashboard</span></a>
+</div>
 <div class="proj" id="fpt-schools-m1">
 <h4 data-en="Paid Media for Admissions &lt;span class=&quot;tag&quot;&gt;Meta Ads&lt;/span&gt;" data-vi="Paid Media cho tuyển sinh &lt;span class=&quot;tag&quot;&gt;Meta Ads&lt;/span&gt;">Paid Media for Admissions <span class="tag">Meta Ads</span></h4>
-<p class="intro" data-en="Running Meta Ads for admissions lead generation through peak season, targeting parents researching schools for the coming academic year." data-vi="Triển khai Meta Ads phục vụ mục tiêu thu lead tuyển sinh trong mùa cao điểm, hướng đến nhóm phụ huynh đang tìm hiểu trường cho năm học mới.">Running Meta Ads for admissions lead generation through peak season, targeting parents researching schools for the coming academic year.</p>
+<p class="intro" data-en="Running Meta Ads to generate admissions leads through peak season, built on parent insight, level-specific needs and competitor advertising." data-vi="Triển khai Meta Ads phục vụ mục tiêu tạo lead tuyển sinh trong mùa cao điểm, dựa trên insight phụ huynh, nhu cầu theo cấp học và hoạt động quảng cáo của đối thủ.">Running Meta Ads to generate admissions leads through peak season, built on parent insight, level-specific needs and competitor advertising.</p>
 <div class="mrow">
 <div class="mcell">
 <p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;f1&quot;&gt;7.06&lt;/span&gt; bn VND" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;f1&quot;&gt;7,06&lt;/span&gt; tỷ VNĐ"><span class="ed" data-k="f1">7.06</span> bn VND</p>
@@ -728,9 +770,8 @@ body.editing figure img{cursor:move}
 </div>
 </div>
 <ul class="pts">
-<li data-en="Researching parent personas, admissions insights and competitor advertising activity." data-vi="Nghiên cứu chân dung phụ huynh, insight tuyển sinh và hoạt động quảng cáo của đối thủ.">Researching parent personas, admissions insights and competitor advertising activity.</li>
-<li data-en="Developing content angles, messaging and visual direction for Facebook ads." data-vi="Xây dựng content angle, thông điệp và định hướng hình ảnh cho quảng cáo Facebook.">Developing content angles, messaging and visual direction for Facebook ads.</li>
-<li data-en="Tracking performance by campus and region; compiling reports and recommending campaign adjustments." data-vi="Theo dõi hiệu quả theo cơ sở/khu vực; tổng hợp báo cáo và đề xuất điều chỉnh chiến dịch.">Tracking performance by campus and region; compiling reports and recommending campaign adjustments.</li>
+<li data-en="Researching parent insight, level-specific needs and competitor advertising, and turning it into content angles, messaging, visual direction and approach for Facebook ads." data-vi="Nghiên cứu insight phụ huynh, nhu cầu theo cấp học và hoạt động quảng cáo của đối thủ để phát triển content angle, thông điệp, định hướng hình ảnh và hướng tiếp cận cho quảng cáo Facebook.">Researching parent insight, level-specific needs and competitor advertising, and turning it into content angles, messaging, visual direction and approach for Facebook ads.</li>
+<li data-en="Tracking cost, lead quality and performance by campus and region; analysing CRM data, building dashboards and reports, and recommending campaign adjustments." data-vi="Theo dõi chi phí, lead quality và hiệu quả theo cơ sở/khu vực; phân tích dữ liệu CRM, xây dashboard và báo cáo; đề xuất điều chỉnh chiến dịch.">Tracking cost, lead quality and performance by campus and region; analysing CRM data, building dashboards and reports, and recommending campaign adjustments.</li>
 </ul>
 <div class="ev">
 <figure>
@@ -740,8 +781,8 @@ body.editing figure img{cursor:move}
 </div>
 </div>
 <div class="proj" id="fpt-schools-m2">
-<h4>SEO Content Project <span class="tag">SEO</span></h4>
-<p class="intro" data-en="Contributing to an SEO programme for the new admissions season, planned at roughly &lt;span class=&quot;ed&quot; data-k=&quot;f4&quot;&gt;1,000&lt;/span&gt; articles." data-vi="Tham gia triển khai dự án SEO phục vụ mùa tuyển sinh mới, với quy mô kế hoạch khoảng &lt;span class=&quot;ed&quot; data-k=&quot;f4&quot;&gt;1.000&lt;/span&gt; bài viết.">Contributing to an SEO programme for the new admissions season, planned at roughly <span class="ed" data-k="f4">1,000</span> articles.</p>
+<h4 data-en="Admissions SEO Project &lt;span class=&quot;tag&quot;&gt;SEO&lt;/span&gt;" data-vi="Dự án SEO tuyển sinh &lt;span class=&quot;tag&quot;&gt;SEO&lt;/span&gt;">Admissions SEO Project <span class="tag">SEO</span></h4>
+<p class="intro" data-en="An admissions SEO project for the new season, planned at roughly 1,000 articles and built to improve how parents find the schools organically." data-vi="Dự án SEO tuyển sinh cho mùa tuyển sinh mới, quy mô kế hoạch khoảng 1.000 bài viết, nhằm tối ưu khả năng tiếp cận tự nhiên của phụ huynh.">An admissions SEO project for the new season, planned at roughly 1,000 articles and built to improve how parents find the schools organically.</p>
 <div class="mrow">
 <div class="mcell">
 <p class="n" data-en="&lt;span class=&quot;ed&quot; data-k=&quot;f5&quot;&gt;100&lt;/span&gt;+ clusters" data-vi="&lt;span class=&quot;ed&quot; data-k=&quot;f5&quot;&gt;100&lt;/span&gt;+ nhóm"><span class="ed" data-k="f5">100</span>+ clusters</p>
@@ -757,7 +798,7 @@ body.editing figure img{cursor:move}
 </div>
 </div>
 <ul class="pts">
-<li data-en="Running the full SEO content process: keyword research, search-intent clustering, outlines, on-page checklists and internal-linking direction." data-vi="Thực hiện quy trình SEO content từ keyword research, phân nhóm search intent, lên outline đến on-page checklist và internal-linking direction.">Running the full SEO content process: keyword research, search-intent clustering, outlines, on-page checklists and internal-linking direction.</li>
+<li data-en="Running the full SEO content process: keyword research, search-intent clustering, content plan, outlines, SEO writing, on-page SEO and internal linking." data-vi="Thực hiện quy trình SEO content từ keyword research, phân nhóm search intent, content plan, outline, viết bài SEO, on-page SEO đến internal linking.">Running the full SEO content process: keyword research, search-intent clustering, content plan, outlines, SEO writing, on-page SEO and internal linking.</li>
 <li data-en="Working with the communications team to review and publish articles." data-vi="Phối hợp đội ngũ truyền thông kiểm duyệt và xuất bản bài viết.">Working with the communications team to review and publish articles.</li>
 </ul>
 <div class="ev">
@@ -768,9 +809,10 @@ body.editing figure img{cursor:move}
 </div>
 </div>
 <div class="proj" id="fpt-schools-m3">
-<h4>CRM &amp; Lead Lifecycle Optimization <span class="tag">Getfly CRM</span></h4>
+<h4>CRM &amp; Lead Quality <span class="tag">Getfly CRM</span></h4>
 <p class="intro" data-en="Helping build and standardise CRM operations on Getfly, focused on data quality and the effectiveness of lead nurturing." data-vi="Tham gia xây dựng và chuẩn hóa vận hành CRM trên Getfly, tập trung vào chất lượng dữ liệu và hiệu quả chăm sóc lead.">Helping build and standardise CRM operations on Getfly, focused on data quality and the effectiveness of lead nurturing.</p>
 <ul class="pts">
+<li data-en="Tracking how the sales team nurtures leads on the CRM and raising alerts to improve call-handling quality and conversion." data-vi="Theo dõi tình trạng chăm sóc lead của đội sales trên CRM; đưa ra cảnh báo để cải thiện chất lượng chăm sóc cuộc gọi và khả năng chuyển đổi.">Tracking how the sales team nurtures leads on the CRM and raising alerts to improve call-handling quality and conversion.</li>
 <li data-en="Defining rules for call status, interest level, consulting notes and the re-nurturing workflow." data-vi="Xây dựng rule cho trạng thái gọi điện, mức độ quan tâm, ghi chú tư vấn và quy trình chăm sóc lại.">Defining rules for call status, interest level, consulting notes and the re-nurturing workflow.</li>
 <li data-en="Analysing lead data to find drop-off points along the consulting journey." data-vi="Phân tích dữ liệu lead để phát hiện các điểm rơi trong hành trình tư vấn.">Analysing lead data to find drop-off points along the consulting journey.</li>
 <li data-en="&lt;strong&gt;Finding:&lt;/strong&gt; leads interested in the following academic year were tagged “not interested / not a fit” instead of entering the right nurturing flow." data-vi="&lt;strong&gt;Phát hiện:&lt;/strong&gt; lead có nhu cầu cho năm học sau bị gắn “không quan tâm / không phù hợp” thay vì đưa vào luồng nurturing phù hợp."><strong>Finding:</strong> leads interested in the following academic year were tagged “not interested / not a fit” instead of entering the right nurturing flow.</li>
@@ -801,11 +843,35 @@ body.editing figure img{cursor:move}
 <p class="eyebrow" data-en="Experience" data-vi="Kinh nghiệm">Experience</p>
 <h3>ClickStar</h3>
 <p class="meta">
-<span class="rolename">Client-facing Project Manager &amp; Digital Marketing Executive</span>
+<span class="rolename" data-en="Project Manager" data-vi="Quản lý dự án">Project Manager</span>
 <span class="when" data-en="04/2026 – Present" data-vi="04/2026 – Hiện tại">04/2026 – Present</span>
 </p>
 </div>
-<p class="body-copy" data-en="Managing and personally delivering Digital Marketing projects for partner businesses: taking briefs, working with clients, coordinating internally, executing and reporting results to both management and partners." data-vi="Quản lý và trực tiếp triển khai dự án Digital Marketing cho các doanh nghiệp đối tác: nhận brief, làm việc với khách hàng, phối hợp nội bộ, triển khai và báo cáo kết quả cho cả quản lý lẫn đối tác.">Managing and personally delivering Digital Marketing projects for partner businesses: taking briefs, working with clients, coordinating internally, executing and reporting results to both management and partners.</p>
+<p class="body-copy" data-en="Managing a 5-person project team across Website, SEO, Ads and Design, and acting as the direct point of contact with partners — from taking the brief, to an execution plan, to reporting results to management." data-vi="Quản lý đội dự án 5 thành viên thuộc Website, SEO, Ads và Thiết kế; làm việc trực tiếp với đối tác, từ tiếp nhận yêu cầu, chuyển thành kế hoạch triển khai đến báo cáo kết quả với cấp quản lý.">Managing a 5-person project team across Website, SEO, Ads and Design, and acting as the direct point of contact with partners — from taking the brief, to an execution plan, to reporting results to management.</p>
+<div class="mrow">
+<div class="mcell">
+<p class="n" data-en="5 members" data-vi="5 thành viên">5 members</p>
+<p class="l" data-en="Project team: Website · SEO · Ads · Design" data-vi="Đội dự án: Website · SEO · Ads · Thiết kế">Project team: Website · SEO · Ads · Design</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="Cross-functional" data-vi="Đa chức năng">Cross-functional</p>
+<p class="l" data-en="Work assigned and controlled across disciplines — progress and output quality" data-vi="Giao việc và kiểm soát tiến độ, chất lượng đầu ra xuyên các mảng">Work assigned and controlled across disciplines — progress and output quality</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="Client-facing" data-vi="Làm việc với đối tác">Client-facing</p>
+<p class="l" data-en="Direct contact with partners: brief → plan → reporting" data-vi="Làm việc trực tiếp với đối tác: brief → kế hoạch → báo cáo">Direct contact with partners: brief → plan → reporting</p>
+</div>
+</div>
+<ul class="pts">
+<li data-en="Assigning work and controlling progress and output quality across the team." data-vi="Giao việc, kiểm soát tiến độ và chất lượng đầu ra của cả đội.">Assigning work and controlling progress and output quality across the team.</li>
+<li data-en="Training team members on the project." data-vi="Đào tạo thành viên trong dự án.">Training team members on the project.</li>
+<li data-en="Taking requirements directly from partners, turning them into delivery plans and reporting results to management." data-vi="Làm việc trực tiếp với đối tác, tiếp nhận yêu cầu, chuyển thành kế hoạch triển khai và báo cáo kết quả với cấp quản lý.">Taking requirements directly from partners, turning them into delivery plans and reporting results to management.</li>
+<li data-en="Coordinating Digital Marketing projects for H’Pilates, MT Collection Hotels and other SEO, website and advertising projects." data-vi="Điều phối các dự án Digital Marketing cho H’Pilates, MT Collection Hotels và các dự án SEO, website, quảng cáo khác.">Coordinating Digital Marketing projects for H’Pilates, MT Collection Hotels and other SEO, website and advertising projects.</li>
+</ul>
+<div class="subhead">
+<h4 data-en="Projects coordinated" data-vi="Các dự án đã điều phối">Projects coordinated</h4>
+<p class="sd" data-en="Digital Growth case studies delivered under this role." data-vi="Các case study Digital Growth thực hiện trong vai trò này.">Digital Growth case studies delivered under this role.</p>
+</div>
 <div class="proj" id="clickstar-m1">
 <h4 data-en="H’Pilates &lt;span class=&quot;tag&quot;&gt;Meta Ads · &lt;span class=&quot;ed&quot; data-k=&quot;c1&quot;&gt;9&lt;/span&gt; studios nationwide&lt;/span&gt;" data-vi="H’Pilates &lt;span class=&quot;tag&quot;&gt;Meta Ads · &lt;span class=&quot;ed&quot; data-k=&quot;c1&quot;&gt;9&lt;/span&gt; cơ sở toàn quốc&lt;/span&gt;">H’Pilates <span class="tag">Meta Ads · <span class="ed" data-k="c1">9</span> studios nationwide</span></h4>
 <div class="mrow">
@@ -975,20 +1041,84 @@ body.editing figure img{cursor:move}
 <span class="when">11/2023 – 03/2026</span>
 </p>
 </div>
-<ul class="awards">
-<li data-en="&lt;span class=&quot;n&quot;&gt;&lt;span class=&quot;ed&quot; data-k=&quot;w1&quot;&gt;185&lt;/span&gt;% of KPI&lt;/span&gt;Admissions result, &lt;span class=&quot;ed&quot; data-k=&quot;w2&quot;&gt;2024–2025&lt;/span&gt; academic year" data-vi="&lt;span class=&quot;n&quot;&gt;&lt;span class=&quot;ed&quot; data-k=&quot;w1&quot;&gt;185&lt;/span&gt;% KPI&lt;/span&gt;Kết quả tuyển sinh năm học &lt;span class=&quot;ed&quot; data-k=&quot;w2&quot;&gt;2024–2025&lt;/span&gt;"><span class="n"><span class="ed" data-k="w1">185</span>% of KPI</span>Admissions result, <span class="ed" data-k="w2">2024–2025</span> academic year</li>
-<li data-en="&lt;span class=&quot;n&quot;&gt;Best Sales&lt;/span&gt;Award for the &lt;span class=&quot;ed&quot; data-k=&quot;w3&quot;&gt;2024–2025&lt;/span&gt; academic year" data-vi="&lt;span class=&quot;n&quot;&gt;Best Sales&lt;/span&gt;Danh hiệu năm học &lt;span class=&quot;ed&quot; data-k=&quot;w3&quot;&gt;2024–2025&lt;/span&gt;"><span class="n">Best Sales</span>Award for the <span class="ed" data-k="w3">2024–2025</span> academic year</li>
-<li><span class="n">Outstanding</span>Outstanding Admissions Consultant — Swinburne <span class="ed" data-k="w4">2025</span></li>
-<li data-en="&lt;span class=&quot;n&quot;&gt;&lt;span class=&quot;ed&quot; data-k=&quot;w5&quot;&gt;100&lt;/span&gt;+ schools&lt;/span&gt;High schools across northern Vietnam reached &amp;amp; engaged" data-vi="&lt;span class=&quot;n&quot;&gt;&lt;span class=&quot;ed&quot; data-k=&quot;w5&quot;&gt;100&lt;/span&gt;+ trường&lt;/span&gt;Trường THPT khu vực miền Bắc đã tiếp cận &amp;amp; truyền thông"><span class="n"><span class="ed" data-k="w5">100</span>+ schools</span>High schools across northern Vietnam reached &amp; engaged</li>
+<div class="proj" id="swinburne-m1">
+<h4 data-en="Results" data-vi="Kết quả">Results</h4>
+<ul class="awards three">
+<li data-en="&lt;span class=&quot;n&quot;&gt;185% of KPI&lt;/span&gt;Admissions result, 2024–2025 academic year" data-vi="&lt;span class=&quot;n&quot;&gt;185% KPI&lt;/span&gt;Kết quả tuyển sinh năm học 2024–2025"><span class="n">185% of KPI</span>Admissions result, 2024–2025 academic year</li>
+<li data-en="&lt;span class=&quot;n&quot;&gt;Best Sales&lt;/span&gt;Award for the 2024–2025 academic year" data-vi="&lt;span class=&quot;n&quot;&gt;Best Sales&lt;/span&gt;Danh hiệu năm học 2024–2025"><span class="n">Best Sales</span>Award for the 2024–2025 academic year</li>
+<li data-en="&lt;span class=&quot;n&quot;&gt;Outstanding Admissions Consultant&lt;/span&gt;Swinburne Vietnam — 2025" data-vi="&lt;span class=&quot;n&quot;&gt;Outstanding Admissions Consultant&lt;/span&gt;Swinburne Vietnam — năm 2025"><span class="n">Outstanding Admissions Consultant</span>Swinburne Vietnam — 2025</li>
+</ul>
+<div class="mrow">
+<div class="mcell">
+<p class="n" data-en="8,000+ leads" data-vi="8.000+ lead">8,000+ leads</p>
+<p class="l" data-en="Leads directly contacted, advised and followed through the admissions process" data-vi="Lead trực tiếp liên hệ, tư vấn và theo sát trong quá trình tuyển sinh">Leads directly contacted, advised and followed through the admissions process</p>
+</div>
+</div>
+</div>
+<div class="proj" id="swinburne-m2">
+<h4 data-en="Funnel" data-vi="Funnel">Funnel</h4>
+<p class="intro" data-en="Managing the full admissions journey, from first lead to enrolment." data-vi="Quản lý toàn bộ hành trình tuyển sinh, từ lead ban đầu đến nhập học.">Managing the full admissions journey, from first lead to enrolment.</p>
+<ul class="flow">
+<li><i>01</i><span data-en="Lead" data-vi="Lead">Lead</span></li>
+<li><i>02</i><span data-en="Consultation" data-vi="Tư vấn">Consultation</span></li>
+<li><i>03</i><span data-en="Nurturing" data-vi="Chăm sóc">Nurturing</span></li>
+<li><i>04</i><span data-en="Application" data-vi="Nộp hồ sơ">Application</span></li>
+<li><i>05</i><span data-en="Scholarship exam" data-vi="Thi học bổng">Scholarship exam</span></li>
+<li><i>06</i><span data-en="Deposit" data-vi="Đặt cọc">Deposit</span></li>
+<li><i>07</i><span data-en="Enrolment" data-vi="Nhập học">Enrolment</span></li>
 </ul>
 <ul class="pts">
 <li data-en="Advising students and parents on programmes, tuition, entry requirements and scholarships; accompanying them from first interest to enrolment." data-vi="Tư vấn trực tiếp cho học sinh và phụ huynh về chương trình học, học phí, điều kiện đầu vào và học bổng; đồng hành từ giai đoạn quan tâm đến đăng ký nhập học.">Advising students and parents on programmes, tuition, entry requirements and scholarships; accompanying them from first interest to enrolment.</li>
-<li data-en="Organising and running Info Day admissions events; advising and hosting parents and students on the day." data-vi="Tổ chức và vận hành sự kiện tuyển sinh Info Day; trực tiếp tư vấn, chăm sóc phụ huynh/học sinh tại sự kiện.">Organising and running Info Day admissions events; advising and hosting parents and students on the day.</li>
-<li data-en="Building relationships with teachers, school boards and career counsellors at high schools; developing referrals from teachers, past parents and students." data-vi="Xây dựng mối quan hệ với giáo viên, ban giám hiệu và cán bộ tư vấn hướng nghiệp tại trường THPT; phát triển nguồn referral từ giáo viên, phụ huynh cũ và học sinh.">Building relationships with teachers, school boards and career counsellors at high schools; developing referrals from teachers, past parents and students.</li>
 <li data-en="Working with the Academic Office to assess applications and support admissions for international and transfer students." data-vi="Phối hợp Phòng Đào tạo đánh giá điều kiện hồ sơ, hỗ trợ quy trình xét tuyển cho học sinh quốc tế và học sinh chuyển tiếp.">Working with the Academic Office to assess applications and support admissions for international and transfer students.</li>
-<li data-en="Contributing business requirements for the CRM: data fields, display categories and operating logic." data-vi="Đóng góp yêu cầu nghiệp vụ cho CRM: trường dữ liệu, danh mục hiển thị và logic vận hành.">Contributing business requirements for the CRM: data fields, display categories and operating logic.</li>
-<li data-en="Training and mentoring new admissions consultants." data-vi="Đào tạo, hướng dẫn nhân sự tư vấn tuyển sinh mới.">Training and mentoring new admissions consultants.</li>
+<li data-en="Tracking the CRM and reporting every two months, in line with the school’s scholarship-exam cycles." data-vi="Theo dõi CRM và báo cáo định kỳ 2 tháng/lần, theo các kỳ thi học bổng của trường.">Tracking the CRM and reporting every two months, in line with the school’s scholarship-exam cycles.</li>
 </ul>
+</div>
+<div class="proj" id="swinburne-m3">
+<h4 data-en="Operational improvement" data-vi="Cải tiến vận hành">Operational improvement</h4>
+<div class="mrow">
+<div class="mcell">
+<p class="n" data-en="~20%" data-vi="~20%">~20%</p>
+<p class="l" data-en="Fewer calls to make, while still meeting application and enrolment volume requirements" data-vi="Giảm số cuộc gọi cần thực hiện, vẫn bảo đảm yêu cầu về số lượng hồ sơ xét tuyển và nhập học">Fewer calls to make, while still meeting application and enrolment volume requirements</p>
+</div>
+</div>
+<ul class="pts">
+<li data-en="Identifying bottlenecks in the admissions process and optimising how parents and students are contacted." data-vi="Nhận diện điểm nghẽn trong quy trình tuyển sinh; tối ưu cách liên hệ phụ huynh và học sinh.">Identifying bottlenecks in the admissions process and optimising how parents and students are contacted.</li>
+<li data-en="Contributing business requirements for the CRM: data fields, display categories and operating logic." data-vi="Đóng góp yêu cầu nghiệp vụ cho CRM: trường dữ liệu, danh mục hiển thị và logic vận hành.">Contributing business requirements for the CRM: data fields, display categories and operating logic.</li>
+</ul>
+</div>
+<div class="proj" id="swinburne-m4">
+<h4 data-en="Referral &amp;amp; Partners" data-vi="Referral &amp;amp; Đối tác">Referral &amp; Partners</h4>
+<div class="mrow">
+<div class="mcell">
+<p class="n" data-en="10%+" data-vi="10%+">10%+</p>
+<p class="l" data-en="Of enrolled students came from referral sources" data-vi="Học sinh nhập học đến từ nguồn referral">Of enrolled students came from referral sources</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="100+ high schools" data-vi="100+ trường THPT">100+ high schools</p>
+<p class="l" data-en="Working with teachers at 100+ high schools on admissions programmes and career guidance" data-vi="Làm việc với thầy cô ở hơn 100 trường THPT về chương trình tuyển sinh, hướng nghiệp">Working with teachers at 100+ high schools on admissions programmes and career guidance</p>
+</div>
+</div>
+<ul class="pts">
+<li data-en="Developing relationships with parents, teachers and high schools." data-vi="Phát triển quan hệ với phụ huynh, giáo viên và các trường THPT.">Developing relationships with parents, teachers and high schools.</li>
+</ul>
+</div>
+<div class="proj" id="swinburne-m5">
+<h4 data-en="Events &amp;amp; Training" data-vi="Sự kiện &amp;amp; Đào tạo">Events &amp; Training</h4>
+<div class="mrow">
+<div class="mcell">
+<p class="n" data-en="10+ high schools" data-vi="10+ trường THPT">10+ high schools</p>
+<p class="l" data-en="Hosted at Swinburne Vietnam" data-vi="Được đón tiếp">Hosted at Swinburne Vietnam</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="300+ visits" data-vi="300+ lượt khách">300+ visits</p>
+<p class="l" data-en="Guest visits received" data-vi="Lượt khách đã đón tiếp">Guest visits received</p>
+</div>
+</div>
+<ul class="pts">
+<li data-en="Organising admissions events, Info Day and school tours." data-vi="Tổ chức sự kiện tuyển sinh, Info Day và school tour.">Organising admissions events, Info Day and school tours.</li>
+<li data-en="Internal training for new admissions consultants." data-vi="Đào tạo/training nội bộ cho nhân sự tư vấn tuyển sinh mới.">Internal training for new admissions consultants.</li>
+</ul>
+</div>
 <div class="ev grid3">
 <figure>
 <button data-cap="Chứng nhận Outstanding Admissions Consultant — Swinburne Vietnam 2025" type="button"><img alt="Chứng nhận Outstanding Admissions Consultant" loading="lazy" src="img-16.jpg"></button>
@@ -1007,13 +1137,15 @@ body.editing figure img{cursor:move}
 <!-- ===== DAI HOC FPT ===== -->
 <section id="dai-hoc-fpt">
 <div class="shead">
-<p class="eyebrow" data-en="Experience" data-vi="Kinh nghiệm">Experience</p>
+<p class="eyebrow" data-en="Education" data-vi="Học vấn">Education</p>
 <h3 data-en="FPT University" data-vi="Đại học FPT">FPT University</h3>
 <p class="meta">
-<span class="rolename">Admissions Collaborator</span>
-<span class="when">11/2019 – 05/2023</span>
+<span class="rolename" data-en="Bachelor of Business Administration — Multimedia Communications" data-vi="Cử nhân Quản trị Kinh doanh — chuyên ngành Truyền thông Đa phương tiện">Bachelor of Business Administration — Multimedia Communications</span>
+<span class="when" data-en="Graduated 2023" data-vi="Tốt nghiệp năm 2023">Graduated 2023</span>
 </p>
 </div>
+<div class="proj">
+<h4 data-en="Admissions Collaborator &lt;span class=&quot;tag&quot;&gt;11/2019 – 05/2023&lt;/span&gt;" data-vi="Cộng tác viên tuyển sinh &lt;span class=&quot;tag&quot;&gt;11/2019 – 05/2023&lt;/span&gt;">Admissions Collaborator <span class="tag">11/2019 – 05/2023</span></h4>
 <ul class="pts">
 <li data-en="Contacting parents to share initial programme information and capture their needs." data-vi="Liên hệ phụ huynh để cung cấp thông tin ban đầu về chương trình đào tạo và ghi nhận nhu cầu.">Contacting parents to share initial programme information and capture their needs.</li>
 <li data-en="Qualifying interested leads and handing them to the admissions consulting team." data-vi="Phân loại lead quan tâm, chuyển giao cho đội ngũ tư vấn tuyển sinh tiếp tục chăm sóc.">Qualifying interested leads and handing them to the admissions consulting team.</li>
@@ -1021,6 +1153,31 @@ body.editing figure img{cursor:move}
 <li data-en="Taking part in outreach and career-guidance sessions at high schools." data-vi="Tham gia hoạt động truyền thông, tư vấn hướng nghiệp tại các trường THPT.">Taking part in outreach and career-guidance sessions at high schools.</li>
 <li data-en="Supporting general events and club activities; hosting as MC for several programmes." data-vi="Hỗ trợ các sự kiện chung và hoạt động câu lạc bộ; đảm nhiệm vai trò MC trong một số chương trình.">Supporting general events and club activities; hosting as MC for several programmes.</li>
 </ul>
+</div>
+</section>
+<!-- ===== AWARDS ===== -->
+<section id="giai-thuong">
+<div class="shead">
+<p class="eyebrow" data-en="Recognition" data-vi="Ghi nhận">Recognition</p>
+<h3 data-en="Awards, Achievements &amp;amp; Languages" data-vi="Giải thưởng, Thành tựu &amp;amp; Ngoại ngữ">Awards, Achievements &amp; Languages</h3>
+</div>
+<ul class="awards">
+<li data-en="&lt;span class=&quot;n&quot;&gt;Best Sales&lt;/span&gt;Swinburne Vietnam — 2024–2025 academic year" data-vi="&lt;span class=&quot;n&quot;&gt;Best Sales&lt;/span&gt;Swinburne Vietnam — năm học 2024–2025"><span class="n">Best Sales</span>Swinburne Vietnam — 2024–2025 academic year</li>
+<li data-en="&lt;span class=&quot;n&quot;&gt;Outstanding Admissions Consultant&lt;/span&gt;Swinburne Vietnam — 2025" data-vi="&lt;span class=&quot;n&quot;&gt;Outstanding Admissions Consultant&lt;/span&gt;Swinburne Vietnam — năm 2025"><span class="n">Outstanding Admissions Consultant</span>Swinburne Vietnam — 2025</li>
+<li data-en="&lt;span class=&quot;n&quot;&gt;70% scholarship&lt;/span&gt;Throughout all 4 years of study at FPT University" data-vi="&lt;span class=&quot;n&quot;&gt;Học bổng 70%&lt;/span&gt;Xuyên suốt 4 năm học tại Đại học FPT"><span class="n">70% scholarship</span>Throughout all 4 years of study at FPT University</li>
+<li data-en="&lt;span class=&quot;n&quot;&gt;CRM &amp;amp; process&lt;/span&gt;Contributed to CRM implementation and admissions process improvement" data-vi="&lt;span class=&quot;n&quot;&gt;CRM &amp;amp; quy trình&lt;/span&gt;Đóng góp triển khai CRM và cải tiến quy trình tuyển sinh"><span class="n">CRM &amp; process</span>Contributed to CRM implementation and admissions process improvement</li>
+</ul>
+<p class="eyebrow" style="margin-top:30px" data-en="Languages" data-vi="Ngoại ngữ">Languages</p>
+<div class="mrow">
+<div class="mcell">
+<p class="n" data-en="Vietnamese" data-vi="Tiếng Việt">Vietnamese</p>
+<p class="l" data-en="Native" data-vi="Bản ngữ">Native</p>
+</div>
+<div class="mcell">
+<p class="n" data-en="English" data-vi="Tiếng Anh">English</p>
+<p class="l" data-en="B2 level" data-vi="Trình độ B2">B2 level</p>
+</div>
+</div>
 </section>
 <!-- ===== AMBEDO FIESTA ===== -->
 <section id="ambedo">
